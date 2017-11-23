@@ -5,7 +5,7 @@ O boxplot, ou gráfico de caixa, recebe esse nome pelo seu formato. Sua aparênc
 <img src="estrutura_boxplot.png" width="800">
 
 ## Conhecendo a estrutura e suas quantidades
-- **Quartil:** Um quartil é um dos três valores que dividem algo inteiro em quatro partes iguais.
+- **Quartil:** Um quartil é um dos três valores que dividem algo inteiro em quatro partes iguais. No caso de uma amostra ou população, o quartil divide os dados ordenados em quatro intervalos com o mesmo número de observações.
 
 - **Amplitude interquartil (AIQ):** É a diferença entre o terceiro e o primeiro quartil. Esse valor nos informa sobre a dispersão dos valores observados.
 
