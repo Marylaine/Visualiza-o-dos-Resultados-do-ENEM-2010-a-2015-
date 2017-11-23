@@ -20,12 +20,12 @@ Site: [http://marcusnunes.me/](http://marcusnunes.me/)
 
 ### Algumas Observações:
 
-- O Inep atribui nota zero na redação mesmo para os ausentes, exceto  na edição de 2012, isso pode explicar a alta proporção na primeira classe dos histogramas da média da redação.
+- O Inep atribui nota zero na redação mesmo para os ausentes, exceto  na edição de 2012. Isso pode explicar a alta proporção na primeira classe dos histogramas da média da redação.
 
-- Na edição de 2010, o estado de residência do inscrito não era uma pergunta obrigatória. Logo, os inscritos sem identificação na região foram ignorados na geração dos gráficos com o grupo região e o grupo sexo e região. Enquanto que na tabela estes casos constam como **NA** na coluna região.
+- Na edição de 2010, o estado de residência do inscrito não era uma pergunta obrigatória. Logo, os inscritos sem identificação na região foram ignorados na geração dos gráficos com o grupo região e o grupo sexo e região, enquanto na tabela estes casos constam como **NA** na coluna região.
 
-- Os histogramas por sexo e região mostram pouca diferença na proporção de notas entre os sexos dentro de cada região. Parecia ser um erro no ggplot, mas foi verificado e o resultado é este de fato.
+- Os histogramas por sexo e região mostram pouca diferença na proporção de notas entre os sexos dentro de cada região. Parecia ser um erro no `ggplot`, mas foi verificado e o resultado é este de fato.
 
-- Apesar do nosso esforço em acelerar a geração dos gráficos, na opção "Todos os anos" poderá apresentar alguma demora no carregamento, isso devido à maior quantidade de dados, visto que inclui todos os seis anos disponíveis.
+- Apesar do nosso esforço em acelerar a geração dos gráficos, na opção "Todos os anos" poderá apresentar alguma demora no carregamento, isso devido à maior quantidade de dados, visto que inclui os seis anos disponíveis.
 
-- Os histogramas da renda para todos os anos não seguem a mesma legenda, pois o Inep altera a classificação todos os anos.
+- Os histogramas da renda para todos os anos não seguem a mesma legenda, pois o Inep altera essa classificação todos os anos.
