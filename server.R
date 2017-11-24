@@ -8377,7 +8377,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Média no ENEM",
                    title = "Boxplot das Médias no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(bm)
           }}}}
     if("Média da Redação" %in% input$nota){
@@ -8393,7 +8393,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Média da Redação no ENEM",
                    title = "Boxplot das Médias da Redação no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(br)
           }}}}
     if("Nota em Ciências da Natureza" %in% input$nota){
@@ -8409,7 +8409,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Nota em Ciências da Natureza no ENEM",
                    title = "Boxplot das Notas em Ciências da Natureza no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(bn)
           }}}}
     if("Nota em Ciências Humanas" %in% input$nota){
@@ -8425,7 +8425,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Nota em Ciências Humanas no ENEM",
                    title = "Boxplot das Notas em Ciências Humanas no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(bh)
           }}}}
     if("Nota em Linguagens e Códigos" %in% input$nota){
@@ -8441,7 +8441,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Nota em Linguagens e Códigos no ENEM",
                    title = "Boxplot das Notas em Linguagens e Códigos no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(bl)
           }}}}
     if("Nota em Matemática" %in% input$nota){
@@ -8457,7 +8457,7 @@ function(input,output,session){
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() + theme_bw() +
               labs(x="Ano",y="Nota em Matemática no ENEM",
                    title = "Boxplot das Notas em Matemática no ENEM Segundo o Ano") +
-              theme(legend.position="none")
+              theme(legend.position="none") + scale_x_continuous(breaks = c(2010:2015))
             print(bmt)
           }}}}
     
