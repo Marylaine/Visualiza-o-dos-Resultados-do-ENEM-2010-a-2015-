@@ -14,7 +14,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm15 = read.csv("ebm15.csv", header = T)
+            ebm15 = readRDS("ebm15.rds")
             bm15 = ggplot(ebm15, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -30,7 +30,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr15 = read.csv("ebr15.csv", header = T)
+            ebr15 = readRDS("ebr15.rds")
             br15 = ggplot(ebr15, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -47,7 +47,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn15 = read.csv("ebn15.csv", header = T)
+            ebn15 = readRDS("ebn15.rds")
             bn15 = ggplot(ebn15, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -64,7 +64,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh15 = read.csv("ebh15.csv", header = T)
+            ebh15 = readRDS("ebh15.rds")
             bh15 = ggplot(ebh15, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -81,7 +81,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl15 = read.csv("ebl15.csv", header = T)
+            ebl15 = readRDS("ebl15.rds")
             bl15 = ggplot(ebl15, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -97,7 +97,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt15 = read.csv("ebmt15.csv", header = T)
+            ebmt15 = readRDS("ebmt15.rds")
             bmt15 = ggplot(ebmt15, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -115,7 +115,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms15 = read.csv("ebms15.csv", header = T)
+            ebms15 = readRDS("ebms15.rds")
             bms15 = ggplot(ebms15, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -131,7 +131,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs15 = read.csv("ebrs15.csv", header = T)
+            ebrs15 = readRDS("ebrs15.rds")
             brs15 = ggplot(ebrs15, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -147,7 +147,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns15 = read.csv("ebns15.csv", header = T)
+            ebns15 = readRDS("ebns15.rds")
             bns15 = ggplot(ebns15, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -163,7 +163,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs15 = read.csv("ebhs15.csv", header = T)
+            ebhs15 = readRDS("ebhs15.rds")
             bhs15 = ggplot(ebhs15, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -179,7 +179,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls15 = read.csv("ebls15.csv", header = T)
+            ebls15 = readRDS("ebls15.rds")
             bls15 = ggplot(ebls15, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -195,7 +195,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts15 = read.csv("ebmts15.csv", header = T)
+            ebmts15 = readRDS("ebmts15.rds")
             bmts15 = ggplot(ebmts15, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -212,7 +212,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr15 = read.csv("ebmr15.csv", header = T)
+            ebmr15 = readRDS("ebmr15.rds")
             bmr15 = ggplot(ebmr15, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -228,7 +228,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr15 = read.csv("ebrr15.csv", header = T)
+            ebrr15 = readRDS("ebrr15.rds")
             brr15 = ggplot(ebrr15, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -244,7 +244,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr15 = read.csv("ebnr15.csv", header = T)
+            ebnr15 = readRDS("ebnr15.rds")
             bnr15 = ggplot(ebnr15, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -260,7 +260,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr15 = read.csv("ebhr15.csv", header = T)
+            ebhr15 = readRDS("ebhr15.rds")
             bhr15 = ggplot(ebhr15, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -276,7 +276,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr15 = read.csv("eblr15.csv", header = T)
+            eblr15 = readRDS("eblr15.rds")
             blr15 = ggplot(eblr15, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -292,7 +292,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr15 = read.csv("ebmtr15.csv", header = T)
+            ebmtr15 = readRDS("ebmtr15.rds")
             bmtr15 = ggplot(ebmtr15, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -309,7 +309,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr15 = read.csv("ebmsr15.csv", header = T)
+            ebmsr15 = readRDS("ebmsr15.rds")
             bmsr15 = ggplot(ebmsr15, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -325,7 +325,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr15 = read.csv("ebrsr15.csv", header = T)
+            ebrsr15 = readRDS("ebrsr15.rds")
             brsr15 = ggplot(ebrsr15, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -341,7 +341,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr15 = read.csv("ebnsr15.csv", header = T)
+            ebnsr15 = readRDS("ebnsr15.rds")
             bnsr15 = ggplot(ebnsr15, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -357,7 +357,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr15 = read.csv("ebhsr15.csv", header = T)
+            ebhsr15 = readRDS("ebhsr15.rds")
             bhsr15 = ggplot(ebhsr15, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -373,7 +373,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr15 = read.csv("eblsr15.csv", header = T)
+            eblsr15 = readRDS("eblsr15.rds")
             blsr15 =  ggplot(eblsr15, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -389,7 +389,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr15 = read.csv("ebmtsr15.csv", header = T)
+            ebmtsr15 = readRDS("ebmtsr15.rds")
             bmtsr15 = ggplot(ebmtsr15, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -407,7 +407,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd15 = read.csv("ebmd15.csv", header = T)
+            ebmd15 = readRDS("ebmd15.rds")
             bmd15 = ggplot(ebmd15, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -442,7 +442,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd15 = read.csv("ebrd15.csv", header = T)
+            ebrd15 = readRDS("ebrd15.rds")
             brd15 = ggplot(ebrd15, aes(x = renda, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -478,7 +478,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd15 = read.csv("ebnd15.csv", header = T)
+            ebnd15 = readRDS("ebnd15.rds")
             bnd15 = ggplot(ebnd15, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -513,7 +513,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd15 = read.csv("ebhd15.csv", header = T)
+            ebhd15 = readRDS("ebhd15.rds")
             bhd15 = ggplot(ebhd15, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -548,7 +548,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld15 = read.csv("ebld15.csv", header = T)
+            ebld15 = readRDS("ebld15.rds")
             bld15 = ggplot(ebld15, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -583,7 +583,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd15 = read.csv("ebmtd15.csv", header = T)
+            ebmtd15 = readRDS("ebmtd15.rds")
             bmtd15 = ggplot(ebmtd15, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -619,7 +619,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm15 = read.csv("thm15.csv", header = T)
+            thm15 = readRDS("thm15.rds")
             k = thm15$intervalo[2] - thm15$intervalo[1]
             hm15 = ggplot(thm15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -633,7 +633,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr15 = read.csv("thr15.csv", header = T)
+            thr15 = readRDS("thr15.rds")
             k = thr15$intervalo[2] - thr15$intervalo[1]
             hr15 = ggplot(thr15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -647,7 +647,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn15 = read.csv("thn15.csv", header = T)
+            thn15 = readRDS("thn15.rds")
             k = thn15$intervalo[2] - thn15$intervalo[1]
             hn15 = ggplot(thn15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -661,7 +661,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh15 = read.csv("thh15.csv", header = T)
+            thh15 = readRDS("thh15.rds")
             k = thh15$intervalo[2] - thh15$intervalo[1]
             hh15 = ggplot(thh15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -675,7 +675,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl15 = read.csv("thl15.csv", header = T)
+            thl15 = readRDS("thl15.rds")
             k = thl15$intervalo[2] - thl15$intervalo[1]
             hl15 = ggplot(thl15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -689,7 +689,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt15 = read.csv("thmt15.csv", header = T)
+            thmt15 = readRDS("thmt15.rds")
             k = thmt15$intervalo[2] - thmt15$intervalo[1]
             hmt15 = ggplot(thmt15, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -704,7 +704,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms15 = read.csv("thms15.csv", header = T)
+            thms15 = readRDS("thms15.rds")
             k = thms15$intervalo[2] - thms15$intervalo[1]
             hms15 = ggplot(thms15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -724,7 +724,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs15 = read.csv("thrs15.csv", header = T)
+            thrs15 = readRDS("thrs15.rds")
             k = thrs15$intervalo[2] - thrs15$intervalo[1]
             hrs15 = ggplot(thrs15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -743,7 +743,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns15 = read.csv("thns15.csv", header = T)
+            thns15 = readRDS("thns15.rds")
             k = thns15$intervalo[2] - thns15$intervalo[1]
             hns15 = ggplot(thns15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -764,7 +764,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs15 = read.csv("thhs15.csv", header = T)
+            thhs15 = readRDS("thhs15.rds")
             k = thhs15$intervalo[2] - thhs15$intervalo[1]
             hhs15 = ggplot(thhs15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -785,7 +785,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls15 = read.csv("thls15.csv", header = T)
+            thls15 = readRDS("thls15.rds")
             k = thls15$intervalo[2] - thls15$intervalo[1]
             hls15 = ggplot(thls15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -806,7 +806,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts15 = read.csv("thmts15.csv", header = T)
+            thmts15 = readRDS("thmts15.rds")
             k = thmts15$intervalo[2] - thmts15$intervalo[1]
             hmts15 = ggplot(thmts15) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -828,7 +828,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr15 = read.csv("thmr15.csv", header = T)
+            thmr15 = readRDS("thmr15.rds")
             k = thmr15$intervalo[2] - thmr15$intervalo[1]
             hmr15 = ggplot(thmr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -846,7 +846,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr15 = read.csv("thrr15.csv", header = T)
+            thrr15 = readRDS("thrr15.rds")
             k = thrr15$intervalo[2] - thrr15$intervalo[1]
             hrr15 = ggplot(thrr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -864,7 +864,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr15 = read.csv("thnr15.csv", header = T)
+            thnr15 = readRDS("thnr15.rds")
             k = thnr15$intervalo[2] - thnr15$intervalo[1]
             hnr15 = ggplot(thnr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -882,7 +882,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr15 = read.csv("thhr15.csv", header = T)
+            thhr15 = readRDS("thhr15.rds")
             k = thhr15$intervalo[2] - thhr15$intervalo[1]
             hhr15 = ggplot(thhr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -900,7 +900,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr15 = read.csv("thlr15.csv", header = T)
+            thlr15 = readRDS("thlr15.rds")
             k = thlr15$intervalo[2] - thlr15$intervalo[1]
             hlr15 = ggplot(thlr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -918,7 +918,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr15 = read.csv("thmtr15.csv", header = T)
+            thmtr15 = readRDS("thmtr15.rds")
             k = thmtr15$intervalo[2] - thmtr15$intervalo[1]
             hmtr15 = ggplot(thmtr15,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -937,7 +937,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr15 = read.csv("thmsr15.csv", header = T)
+            thmsr15 = readRDS("thmsr15.rds")
             k = thmsr15$intervalo[2] - thmsr15$intervalo[1]
             hmsr15 = ggplot(thmsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -955,7 +955,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr15 = read.csv("thrsr15.csv", header = T)
+            thrsr15 = readRDS("thrsr15.rds")
             k = thrsr15$intervalo[2] - thrsr15$intervalo[1]
             hrsr15 = ggplot(thrsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -973,7 +973,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr15 = read.csv("thnsr15.csv", header = T)
+            thnsr15 = readRDS("thnsr15.rds")
             k = thnsr15$intervalo[2] - thnsr15$intervalo[1]
             hnsr15 = ggplot(thnsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -991,7 +991,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr15 = read.csv("thhsr15.csv", header = T)
+            thhsr15 = readRDS("thhsr15.rds")
             k = thhsr15$intervalo[2] - thhsr15$intervalo[1]
             hhsr15 = ggplot(thhsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -1009,7 +1009,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr15 = read.csv("thlsr15.csv", header = T)
+            thlsr15 = readRDS("thlsr15.rds")
             k = thlsr15$intervalo[2] - thlsr15$intervalo[1]
             hlsr15 = ggplot(thlsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -1027,7 +1027,7 @@ function(input,output,session){
         if(2015 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr15 = read.csv("thmtsr15.csv", header = T)
+            thmtsr15 = readRDS("thmtsr15.rds")
             k = thmtsr15$intervalo[2] - thmtsr15$intervalo[1]
             hmtsr15 = ggplot(thmtsr15) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -1046,7 +1046,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thmd15 = read.csv("thmd15.csv", header = T)
+          thmd15 = readRDS("thmd15.rds")
           k = thmd15$intervalo[2] - thmd15$intervalo[1]
           hmd15 = ggplot(thmd15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1097,7 +1097,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thrd15 = read.csv("thrd15.csv", header = T)
+          thrd15 = readRDS("thrd15.rds")
           k = thrd15$intervalo[2] - thrd15$intervalo[1]
           hrd15 = ggplot(thrd15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1149,7 +1149,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thnd15 = read.csv("thnd15.csv", header = T)
+          thnd15 = readRDS("thnd15.rds")
           k = thnd15$intervalo[2] - thnd15$intervalo[1]
           hnd15 = ggplot(thnd15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1201,7 +1201,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thhd15 = read.csv("thhd15.csv", header = T)
+          thhd15 = readRDS("thhd15.rds")
           k = thhd15$intervalo[2] - thhd15$intervalo[1]
           hhd15 = ggplot(thhd15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1253,7 +1253,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thld15 = read.csv("thld15.csv", header = T)
+          thld15 = readRDS("thld15.rds")
           k = thld15$intervalo[2] - thld15$intervalo[1]
           hld15 = ggplot(thld15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1305,7 +1305,7 @@ function(input,output,session){
       if(2015 %in% input$anos){
         if("Por renda" %in% input$vcategorica){
           rm(list = ls())
-          thmtd15 = read.csv("thmtd15.csv", header = T)
+          thmtd15 = readRDS("thmtd15.rds")
           k = thmtd15$intervalo[2] - thmtd15$intervalo[1]
           hmtd15 = ggplot(thmtd15) +
             geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -1360,7 +1360,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm14 = read.csv("ebm14.csv", header = T)
+            ebm14 = readRDS("ebm14.rds")
             bm14 = ggplot(ebm14, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -1380,7 +1380,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr14 = read.csv("ebr14.csv", header = T)
+            ebr14 = readRDS("ebr14.rds")
             br14 = ggplot(ebr14, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -1400,7 +1400,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn14 = read.csv("ebn14.csv", header = T)
+            ebn14 = readRDS("ebn14.rds")
             bn14 = ggplot(ebn14, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -1420,7 +1420,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh14 = read.csv("ebh14.csv", header = T)
+            ebh14 = readRDS("ebh14.rds")
             bh14 = ggplot(ebh14, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -1440,7 +1440,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl14 = read.csv("ebl14.csv", header = T)
+            ebl14 = readRDS("ebl14.rds")
             bl14 = ggplot(ebl14, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -1459,7 +1459,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt14 = read.csv("ebmt14.csv", header = T)
+            ebmt14 = readRDS("ebmt14.rds")
             bmt14 = ggplot(ebmt14, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1480,7 +1480,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms14 = read.csv("ebms14.csv", header = T)
+            ebms14 = readRDS("ebms14.rds")
             bms14 = ggplot(ebms14, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1499,7 +1499,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs14 = read.csv("ebrs14.csv", header = T)
+            ebrs14 = readRDS("ebrs14.rds")
             brs14 = ggplot(ebrs14, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1518,7 +1518,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns14 = read.csv("ebns14.csv", header = T)
+            ebns14 = readRDS("ebns14.rds")
             bns14 = ggplot(ebns14, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1537,7 +1537,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs14 = read.csv("ebhs14.csv", header = T)
+            ebhs14 = readRDS("ebhs14.rds")
             bhs14 = ggplot(ebhs14, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1556,7 +1556,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls14 = read.csv("ebls14.csv", header = T)
+            ebls14 = readRDS("ebls14.rds")
             bls14 = ggplot(ebls14, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1575,7 +1575,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts14 = read.csv("ebmts14.csv", header = T)
+            ebmts14 = readRDS("ebmts14.rds")
             bmts14 = ggplot(ebmts14, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1595,7 +1595,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr14 = read.csv("ebmr14.csv", header = T)
+            ebmr14 = readRDS("ebmr14.rds")
             bmr14 = ggplot(ebmr14, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1614,7 +1614,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr14 = read.csv("ebrr14.csv", header = T)
+            ebrr14 = readRDS("ebrr14.rds")
             brr14 = ggplot(ebrr14, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1633,7 +1633,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr14 = read.csv("ebnr14.csv", header = T)
+            ebnr14 = readRDS("ebnr14.rds")
             bnr14 = ggplot(ebnr14, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1652,7 +1652,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr14 = read.csv("ebhr14.csv", header = T)
+            ebhr14 = readRDS("ebhr14.rds")
             bhr14 = ggplot(ebhr14, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1671,7 +1671,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr14 = read.csv("eblr14.csv", header = T)
+            eblr14 = readRDS("eblr14.rds")
             blr14 = ggplot(eblr14, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1690,7 +1690,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr14 = read.csv("ebmtr14.csv", header = T)
+            ebmtr14 = readRDS("ebmtr14.rds")
             bmtr14 = ggplot(ebmtr14, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1710,7 +1710,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr14 = read.csv("ebmsr14.csv", header = T)
+            ebmsr14 = readRDS("ebmsr14.rds")
             bmsr14 = ggplot(ebmsr14, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1729,7 +1729,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr14 = read.csv("ebrsr14.csv", header = T)
+            ebrsr14 = readRDS("ebrsr14.rds")
             brsr14 = ggplot(ebrsr14, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1748,7 +1748,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr14 = read.csv("ebnsr14.csv", header = T)
+            ebnsr14 = readRDS("ebnsr14.rds")
             bnsr14 = ggplot(ebnsr14, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1767,7 +1767,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr14 = read.csv("ebhsr14.csv", header = T)
+            ebhsr14 = readRDS("ebhsr14.rds")
             bhsr14 = ggplot(ebhsr14, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -1786,7 +1786,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr14 = read.csv("eblsr14.csv", header = T)
+            eblsr14 = readRDS("eblsr14.rds")
             blsr14 =  ggplot(eblsr14, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -1805,7 +1805,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr14 = read.csv("ebmtsr14.csv", header = T)
+            ebmtsr14 = readRDS("ebmtsr14.rds")
             bmtsr14 = ggplot(ebmtsr14, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -1826,7 +1826,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd14 = read.csv("ebmd14.csv", header = T)
+            ebmd14 = readRDS("ebmd14.rds")
             bmd14 = ggplot(ebmd14, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1864,7 +1864,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd14 = read.csv("ebrd14.csv", header = T)
+            ebrd14 = readRDS("ebrd14.rds")
             brd14 = ggplot(ebrd14, aes(x = renda,y=out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1903,7 +1903,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd14 = read.csv("ebnd14.csv", header = T)
+            ebnd14 = readRDS("ebnd14.rds")
             bnd14 = ggplot(ebnd14, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1941,7 +1941,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd14 = read.csv("ebhd14.csv", header = T)
+            ebhd14 = readRDS("ebhd14.rds")
             bhd14 = ggplot(ebhd14, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -1979,7 +1979,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld14 = read.csv("ebld14.csv", header = T)
+            ebld14 = readRDS("ebld14.rds")
             bld14 = ggplot(ebld14, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -2017,7 +2017,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd14 = read.csv("ebmtd14.csv", header = T)
+            ebmtd14 = readRDS("ebmtd14.rds")
             bmtd14 = ggplot(ebmtd14, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -2056,7 +2056,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm14 = read.csv("thm14.csv", header = T)
+            thm14 = readRDS("thm14.rds")
             k = thm14$intervalo[2] - thm14$intervalo[1]
             hm14 = ggplot(thm14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2073,7 +2073,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr14 = read.csv("thr14.csv", header = T)
+            thr14 = readRDS("thr14.rds")
             k = thr14$intervalo[2] - thr14$intervalo[1]
             hr14 = ggplot(thr14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2090,7 +2090,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn14 = read.csv("thn14.csv", header = T)
+            thn14 = readRDS("thn14.rds")
             k = thn14$intervalo[2] - thn14$intervalo[1]
             hn14 = ggplot(thn14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2107,7 +2107,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh14 = read.csv("thh14.csv", header = T)
+            thh14 = readRDS("thh14.rds")
             k = thh14$intervalo[2] - thh14$intervalo[1]
             hh14 = ggplot(thh14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2124,7 +2124,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl14 = read.csv("thl14.csv", header = T)
+            thl14 = readRDS("thl14.rds")
             k = thl14$intervalo[2] - thl14$intervalo[1]
             hl14 = ggplot(thl14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2141,7 +2141,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt14 = read.csv("thmt14.csv", header = T)
+            thmt14 = readRDS("thmt14.rds")
             k = thmt14$intervalo[2] - thmt14$intervalo[1]
             hmt14 = ggplot(thmt14, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2159,7 +2159,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms14 = read.csv("thms14.csv", header = T)
+            thms14 = readRDS("thms14.rds")
             k = thms14$intervalo[2] - thms14$intervalo[1]
             hms14 = ggplot(thms14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2179,7 +2179,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs14 = read.csv("thrs14.csv", header = T)
+            thrs14 = readRDS("thrs14.rds")
             k = thrs14$intervalo[2] - thrs14$intervalo[1]
             hrs14 = ggplot(thrs14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2198,7 +2198,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns14 = read.csv("thns14.csv", header = T)
+            thns14 = readRDS("thns14.rds")
             k = thns14$intervalo[2] - thns14$intervalo[1]
             hns14 = ggplot(thns14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2219,7 +2219,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs14 = read.csv("thhs14.csv", header = T)
+            thhs14 = readRDS("thhs14.rds")
             k = thhs14$intervalo[2] - thhs14$intervalo[1]
             hhs14 = ggplot(thhs14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2240,7 +2240,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls14 = read.csv("thls14.csv", header = T)
+            thls14 = readRDS("thls14.rds")
             k = thls14$intervalo[2] - thls14$intervalo[1]
             hls14 = ggplot(thls14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2261,7 +2261,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts14 = read.csv("thmts14.csv", header = T)
+            thmts14 = readRDS("thmts14.rds")
             k = thmts14$intervalo[2] - thmts14$intervalo[1]
             hmts14 = ggplot(thmts14) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -2283,7 +2283,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr14 = read.csv("thmr14.csv", header = T)
+            thmr14 = readRDS("thmr14.rds")
             k = thmr14$intervalo[2] - thmr14$intervalo[1]
             hmr14 = ggplot(thmr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2301,7 +2301,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr14 = read.csv("thrr14.csv", header = T)
+            thrr14 = readRDS("thrr14.rds")
             k = thrr14$intervalo[2] - thrr14$intervalo[1]
             hrr14 = ggplot(thrr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2319,7 +2319,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr14 = read.csv("thnr14.csv", header = T)
+            thnr14 = readRDS("thnr14.rds")
             k = thnr14$intervalo[2] - thnr14$intervalo[1]
             hnr14 = ggplot(thnr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2337,7 +2337,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr14 = read.csv("thhr14.csv", header = T)
+            thhr14 = readRDS("thhr14.rds")
             k = thhr14$intervalo[2] - thhr14$intervalo[1]
             hhr14 = ggplot(thhr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2355,7 +2355,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr14 = read.csv("thlr14.csv", header = T)
+            thlr14 = readRDS("thlr14.rds")
             k = thlr14$intervalo[2] - thlr14$intervalo[1]
             hlr14 = ggplot(thlr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2373,7 +2373,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr14 = read.csv("thmtr14.csv", header = T)
+            thmtr14 = readRDS("thmtr14.rds")
             k = thmtr14$intervalo[2] - thmtr14$intervalo[1]
             hmtr14 = ggplot(thmtr14,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -2392,7 +2392,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr14 = read.csv("thmsr14.csv", header = T)
+            thmsr14 = readRDS("thmsr14.rds")
             k = thmsr14$intervalo[2] - thmsr14$intervalo[1]
             hmsr14 = ggplot(thmsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2410,7 +2410,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr14 = read.csv("thrsr14.csv", header = T)
+            thrsr14 = readRDS("thrsr14.rds")
             k = thrsr14$intervalo[2] - thrsr14$intervalo[1]
             hrsr14 = ggplot(thrsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2428,7 +2428,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr14 = read.csv("thnsr14.csv", header = T)
+            thnsr14 = readRDS("thnsr14.rds")
             k = thnsr14$intervalo[2] - thnsr14$intervalo[1]
             hnsr14 = ggplot(thnsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2446,7 +2446,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr14 = read.csv("thhsr14.csv", header = T)
+            thhsr14 = readRDS("thhsr14.rds")
             k = thhsr14$intervalo[2] - thhsr14$intervalo[1]
             hhsr14 = ggplot(thhsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2464,7 +2464,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr14 = read.csv("thlsr14.csv", header = T)
+            thlsr14 = readRDS("thlsr14.rds")
             k = thlsr14$intervalo[2] - thlsr14$intervalo[1]
             hlsr14 = ggplot(thlsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2482,7 +2482,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr14 = read.csv("thmtsr14.csv", header = T)
+            thmtsr14 = readRDS("thmtsr14.rds")
             k = thmtsr14$intervalo[2] - thmtsr14$intervalo[1]
             hmtsr14 = ggplot(thmtsr14) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -2501,7 +2501,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd14 = read.csv("thmd14.csv", header = T)
+            thmd14 = readRDS("thmd14.rds")
             k = thmd14$intervalo[2] - thmd14$intervalo[1]
             hmd14 = ggplot(thmd14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2552,7 +2552,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd14 = read.csv("thrd14.csv", header = T)
+            thrd14 = readRDS("thrd14.rds")
             k = thrd14$intervalo[2] - thrd14$intervalo[1]
             hrd14 = ggplot(thrd14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2604,7 +2604,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd14 = read.csv("thnd14.csv", header = T)
+            thnd14 = readRDS("thnd14.rds")
             k = thnd14$intervalo[2] - thnd14$intervalo[1]
             hnd14 = ggplot(thnd14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2656,7 +2656,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd14 = read.csv("thhd14.csv", header = T)
+            thhd14 = readRDS("thhd14.rds")
             k = thhd14$intervalo[2] - thhd14$intervalo[1]
             hhd14 = ggplot(thhd14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2708,7 +2708,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld14 = read.csv("thld14.csv", header = T)
+            thld14 = readRDS("thld14.rds")
             k = thld14$intervalo[2] - thld14$intervalo[1]
             hld14 = ggplot(thld14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2760,7 +2760,7 @@ function(input,output,session){
         if(2014 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd14 = read.csv("thmtd14.csv", header = T)
+            thmtd14 = readRDS("thmtd14.rds")
             k = thmtd14$intervalo[2] - thmtd14$intervalo[1]
             hmtd14 = ggplot(thmtd14) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -2815,7 +2815,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm13 = read.csv("ebm13.csv", header = T)
+            ebm13 = readRDS("ebm13.rds")
             bm13 = ggplot(ebm13, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -2835,7 +2835,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr13 = read.csv("ebr13.csv", header = T)
+            ebr13 = readRDS("ebr13.rds")
             br13 = ggplot(ebr13, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -2855,7 +2855,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn13 = read.csv("ebn13.csv", header = T)
+            ebn13 = readRDS("ebn13.rds")
             bn13 = ggplot(ebn13, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -2875,7 +2875,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh13 = read.csv("ebh13.csv", header = T)
+            ebh13 = readRDS("ebh13.rds")
             bh13 = ggplot(ebh13, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -2895,7 +2895,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl13 = read.csv("ebl13.csv", header = T)
+            ebl13 = readRDS("ebl13.rds")
             bl13 = ggplot(ebl13, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -2914,7 +2914,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt13 = read.csv("ebmt13.csv", header = T)
+            ebmt13 = readRDS("ebmt13.rds")
             bmt13 = ggplot(ebmt13, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -2935,7 +2935,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms13 = read.csv("ebms13.csv", header = T)
+            ebms13 = readRDS("ebms13.rds")
             bms13 = ggplot(ebms13, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -2954,7 +2954,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs13 = read.csv("ebrs13.csv", header = T)
+            ebrs13 = readRDS("ebrs13.rds")
             brs13 = ggplot(ebrs13, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -2973,7 +2973,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns13 = read.csv("ebns13.csv", header = T)
+            ebns13 = readRDS("ebns13.rds")
             bns13 = ggplot(ebns13, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -2992,7 +2992,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs13 = read.csv("ebhs13.csv", header = T)
+            ebhs13 = readRDS("ebhs13.rds")
             bhs13 = ggplot(ebhs13, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3011,7 +3011,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls13 = read.csv("ebls13.csv", header = T)
+            ebls13 = readRDS("ebls13.rds")
             bls13 = ggplot(ebls13, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3030,7 +3030,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts13 = read.csv("ebmts13.csv", header = T)
+            ebmts13 = readRDS("ebmts13.rds")
             bmts13 = ggplot(ebmts13, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3050,7 +3050,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr13 = read.csv("ebmr13.csv", header = T)
+            ebmr13 = readRDS("ebmr13.rds")
             bmr13 = ggplot(ebmr13, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3069,7 +3069,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr13 = read.csv("ebrr13.csv", header = T)
+            ebrr13 = readRDS("ebrr13.rds")
             brr13 = ggplot(ebrr13, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3088,7 +3088,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr13 = read.csv("ebnr13.csv", header = T)
+            ebnr13 = readRDS("ebnr13.rds")
             bnr13 = ggplot(ebnr13, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3107,7 +3107,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr13 = read.csv("ebhr13.csv", header = T)
+            ebhr13 = readRDS("ebhr13.rds")
             bhr13 = ggplot(ebhr13, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3126,7 +3126,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr13 = read.csv("eblr13.csv", header = T)
+            eblr13 = readRDS("eblr13.rds")
             blr13 = ggplot(eblr13, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3145,7 +3145,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr13 = read.csv("ebmtr13.csv", header = T)
+            ebmtr13 = readRDS("ebmtr13.rds")
             bmtr13 = ggplot(ebmtr13, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3165,7 +3165,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr13 = read.csv("ebmsr13.csv", header = T)
+            ebmsr13 = readRDS("ebmsr13.rds")
             bmsr13 = ggplot(ebmsr13, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3184,7 +3184,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr13 = read.csv("ebrsr13.csv", header = T)
+            ebrsr13 = readRDS("ebrsr13.rds")
             brsr13 = ggplot(ebrsr13, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3203,7 +3203,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr13 = read.csv("ebnsr13.csv", header = T)
+            ebnsr13 = readRDS("ebnsr13.rds")
             bnsr13 = ggplot(ebnsr13, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3222,7 +3222,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr13 = read.csv("ebhsr13.csv", header = T)
+            ebhsr13 = readRDS("ebhsr13.rds")
             bhsr13 = ggplot(ebhsr13, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3241,7 +3241,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr13 = read.csv("eblsr13.csv", header = T)
+            eblsr13 = readRDS("eblsr13.rds")
             blsr13 =  ggplot(eblsr13, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -3260,7 +3260,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr13 = read.csv("ebmtsr13.csv", header = T)
+            ebmtsr13 = readRDS("ebmtsr13.rds")
             bmtsr13 = ggplot(ebmtsr13, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -3281,7 +3281,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd13 = read.csv("ebmd13.csv", header = T)
+            ebmd13 = readRDS("ebmd13.rds")
             bmd13 = ggplot(ebmd13, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3319,7 +3319,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd13 = read.csv("ebrd13.csv", header = T)
+            ebrd13 = readRDS("ebrd13.rds")
             brd13 = ggplot(ebrd13, aes(x = renda, y=out,middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3358,7 +3358,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd13 = read.csv("ebnd13.csv", header = T)
+            ebnd13 = readRDS("ebnd13.rds")
             bnd13 = ggplot(ebnd13, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3396,7 +3396,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd13 = read.csv("ebhd13.csv", header = T)
+            ebhd13 = readRDS("ebhd13.rds")
             bhd13 = ggplot(ebhd13, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3434,7 +3434,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld13 = read.csv("ebld13.csv", header = T)
+            ebld13 = readRDS("ebld13.rds")
             bld13 = ggplot(ebld13, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -3472,7 +3472,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd13 = read.csv("ebmtd13.csv", header = T)
+            ebmtd13 = readRDS("ebmtd13.rds")
             bmtd13 = ggplot(ebmtd13, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -3511,7 +3511,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm13 = read.csv("thm13.csv", header = T)
+            thm13 = readRDS("thm13.rds")
             k = thm13$intervalo[2] - thm13$intervalo[1]
             hm13 = ggplot(thm13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3528,7 +3528,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr13 = read.csv("thr13.csv", header = T)
+            thr13 = readRDS("thr13.rds")
             k = thr13$intervalo[2] - thr13$intervalo[1]
             hr13 = ggplot(thr13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3545,7 +3545,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn13 = read.csv("thn13.csv", header = T)
+            thn13 = readRDS("thn13.rds")
             k = thn13$intervalo[2] - thn13$intervalo[1]
             hn13 = ggplot(thn13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3562,7 +3562,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh13 = read.csv("thh13.csv", header = T)
+            thh13 = readRDS("thh13.rds")
             k = thh13$intervalo[2] - thh13$intervalo[1]
             hh13 = ggplot(thh13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3579,7 +3579,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl13 = read.csv("thl13.csv", header = T)
+            thl13 = readRDS("thl13.rds")
             k = thl13$intervalo[2] - thl13$intervalo[1]
             hl13 = ggplot(thl13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3596,7 +3596,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt13 = read.csv("thmt13.csv", header = T)
+            thmt13 = readRDS("thmt13.rds")
             k = thmt13$intervalo[2] - thmt13$intervalo[1]
             hmt13 = ggplot(thmt13, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3614,7 +3614,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms13 = read.csv("thms13.csv", header = T)
+            thms13 = readRDS("thms13.rds")
             k = thms13$intervalo[2] - thms13$intervalo[1]
             hms13 = ggplot(thms13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3634,7 +3634,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs13 = read.csv("thrs13.csv", header = T)
+            thrs13 = readRDS("thrs13.rds")
             k = thrs13$intervalo[2] - thrs13$intervalo[1]
             hrs13 = ggplot(thrs13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3653,7 +3653,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns13 = read.csv("thns13.csv", header = T)
+            thns13 = readRDS("thns13.rds")
             k = thns13$intervalo[2] - thns13$intervalo[1]
             hns13 = ggplot(thns13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3674,7 +3674,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs13 = read.csv("thhs13.csv", header = T)
+            thhs13 = readRDS("thhs13.rds")
             k = thhs13$intervalo[2] - thhs13$intervalo[1]
             hhs13 = ggplot(thhs13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3695,7 +3695,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls13 = read.csv("thls13.csv", header = T)
+            thls13 = readRDS("thls13.rds")
             k = thls13$intervalo[2] - thls13$intervalo[1]
             hls13 = ggplot(thls13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3716,7 +3716,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts13 = read.csv("thmts13.csv", header = T)
+            thmts13 = readRDS("thmts13.rds")
             k = thmts13$intervalo[2] - thmts13$intervalo[1]
             hmts13 = ggplot(thmts13) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -3738,7 +3738,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr13 = read.csv("thmr13.csv", header = T)
+            thmr13 = readRDS("thmr13.rds")
             k = thmr13$intervalo[2] - thmr13$intervalo[1]
             hmr13 = ggplot(thmr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3756,7 +3756,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr13 = read.csv("thrr13.csv", header = T)
+            thrr13 = readRDS("thrr13.rds")
             k = thrr13$intervalo[2] - thrr13$intervalo[1]
             hrr13 = ggplot(thrr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3774,7 +3774,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr13 = read.csv("thnr13.csv", header = T)
+            thnr13 = readRDS("thnr13.rds")
             k = thnr13$intervalo[2] - thnr13$intervalo[1]
             hnr13 = ggplot(thnr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3792,7 +3792,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr13 = read.csv("thhr13.csv", header = T)
+            thhr13 = readRDS("thhr13.rds")
             k = thhr13$intervalo[2] - thhr13$intervalo[1]
             hhr13 = ggplot(thhr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3810,7 +3810,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr13 = read.csv("thlr13.csv", header = T)
+            thlr13 = readRDS("thlr13.rds")
             k = thlr13$intervalo[2] - thlr13$intervalo[1]
             hlr13 = ggplot(thlr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3828,7 +3828,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr13 = read.csv("thmtr13.csv", header = T)
+            thmtr13 = readRDS("thmtr13.rds")
             k = thmtr13$intervalo[2] - thmtr13$intervalo[1]
             hmtr13 = ggplot(thmtr13,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -3847,7 +3847,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr13 = read.csv("thmsr13.csv", header = T)
+            thmsr13 = readRDS("thmsr13.rds")
             k = thmsr13$intervalo[2] - thmsr13$intervalo[1]
             hmsr13 = ggplot(thmsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3865,7 +3865,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr13 = read.csv("thrsr13.csv", header = T)
+            thrsr13 = readRDS("thrsr13.rds")
             k = thrsr13$intervalo[2] - thrsr13$intervalo[1]
             hrsr13 = ggplot(thrsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3883,7 +3883,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr13 = read.csv("thnsr13.csv", header = T)
+            thnsr13 = readRDS("thnsr13.rds")
             k = thnsr13$intervalo[2] - thnsr13$intervalo[1]
             hnsr13 = ggplot(thnsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3901,7 +3901,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr13 = read.csv("thhsr13.csv", header = T)
+            thhsr13 = readRDS("thhsr13.rds")
             k = thhsr13$intervalo[2] - thhsr13$intervalo[1]
             hhsr13 = ggplot(thhsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3919,7 +3919,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr13 = read.csv("thlsr13.csv", header = T)
+            thlsr13 = readRDS("thlsr13.rds")
             k = thlsr13$intervalo[2] - thlsr13$intervalo[1]
             hlsr13 = ggplot(thlsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3937,7 +3937,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr13 = read.csv("thmtsr13.csv", header = T)
+            thmtsr13 = readRDS("thmtsr13.rds")
             k = thmtsr13$intervalo[2] - thmtsr13$intervalo[1]
             hmtsr13 = ggplot(thmtsr13) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -3956,7 +3956,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd13 = read.csv("thmd13.csv", header = T)
+            thmd13 = readRDS("thmd13.rds")
             k = thmd13$intervalo[2] - thmd13$intervalo[1]
             hmd13 = ggplot(thmd13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4007,7 +4007,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd13 = read.csv("thrd13.csv", header = T)
+            thrd13 = readRDS("thrd13.rds")
             k = thrd13$intervalo[2] - thrd13$intervalo[1]
             hrd13 = ggplot(thrd13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4059,7 +4059,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd13 = read.csv("thnd13.csv", header = T)
+            thnd13 = readRDS("thnd13.rds")
             k = thnd13$intervalo[2] - thnd13$intervalo[1]
             hnd13 = ggplot(thnd13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4111,7 +4111,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd13 = read.csv("thhd13.csv", header = T)
+            thhd13 = readRDS("thhd13.rds")
             k = thhd13$intervalo[2] - thhd13$intervalo[1]
             hhd13 = ggplot(thhd13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4163,7 +4163,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld13 = read.csv("thld13.csv", header = T)
+            thld13 = readRDS("thld13.rds")
             k = thld13$intervalo[2] - thld13$intervalo[1]
             hld13 = ggplot(thld13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4215,7 +4215,7 @@ function(input,output,session){
         if(2013 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd13 = read.csv("thmtd13.csv", header = T)
+            thmtd13 = readRDS("thmtd13.rds")
             k = thmtd13$intervalo[2] - thmtd13$intervalo[1]
             hmtd13 = ggplot(thmtd13) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -4270,7 +4270,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm12 = read.csv("ebm12.csv", header = T)
+            ebm12 = readRDS("ebm12.rds")
             bm12 = ggplot(ebm12, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -4290,7 +4290,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr12 = read.csv("ebr12.csv", header = T)
+            ebr12 = readRDS("ebr12.rds")
             br12 = ggplot(ebr12, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -4310,7 +4310,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn12 = read.csv("ebn12.csv", header = T)
+            ebn12 = readRDS("ebn12.rds")
             bn12 = ggplot(ebn12, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -4330,7 +4330,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh12 = read.csv("ebh12.csv", header = T)
+            ebh12 = readRDS("ebh12.rds")
             bh12 = ggplot(ebh12, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -4350,7 +4350,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl12 = read.csv("ebl12.csv", header = T)
+            ebl12 = readRDS("ebl12.rds")
             bl12 = ggplot(ebl12, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -4369,7 +4369,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt12 = read.csv("ebmt12.csv", header = T)
+            ebmt12 = readRDS("ebmt12.rds")
             bmt12 = ggplot(ebmt12, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4390,7 +4390,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms12 = read.csv("ebms12.csv", header = T)
+            ebms12 = readRDS("ebms12.rds")
             bms12 = ggplot(ebms12, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4409,7 +4409,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs12 = read.csv("ebrs12.csv", header = T)
+            ebrs12 = readRDS("ebrs12.rds")
             brs12 = ggplot(ebrs12, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4428,7 +4428,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns12 = read.csv("ebns12.csv", header = T)
+            ebns12 = readRDS("ebns12.rds")
             bns12 = ggplot(ebns12, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4447,7 +4447,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs12 = read.csv("ebhs12.csv", header = T)
+            ebhs12 = readRDS("ebhs12.rds")
             bhs12 = ggplot(ebhs12, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4466,7 +4466,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls12 = read.csv("ebls12.csv", header = T)
+            ebls12 = readRDS("ebls12.rds")
             bls12 = ggplot(ebls12, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4485,7 +4485,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts12 = read.csv("ebmts12.csv", header = T)
+            ebmts12 = readRDS("ebmts12.rds")
             bmts12 = ggplot(ebmts12, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4505,7 +4505,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr12 = read.csv("ebmr12.csv", header = T)
+            ebmr12 = readRDS("ebmr12.rds")
             bmr12 = ggplot(ebmr12, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4524,7 +4524,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr12 = read.csv("ebrr12.csv", header = T)
+            ebrr12 = readRDS("ebrr12.rds")
             brr12 = ggplot(ebrr12, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4543,7 +4543,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr12 = read.csv("ebnr12.csv", header = T)
+            ebnr12 = readRDS("ebnr12.rds")
             bnr12 = ggplot(ebnr12, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4562,7 +4562,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr12 = read.csv("ebhr12.csv", header = T)
+            ebhr12 = readRDS("ebhr12.rds")
             bhr12 = ggplot(ebhr12, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4581,7 +4581,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr12 = read.csv("eblr12.csv", header = T)
+            eblr12 = readRDS("eblr12.rds")
             blr12 = ggplot(eblr12, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4600,7 +4600,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr12 = read.csv("ebmtr12.csv", header = T)
+            ebmtr12 = readRDS("ebmtr12.rds")
             bmtr12 = ggplot(ebmtr12, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4620,7 +4620,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr12 = read.csv("ebmsr12.csv", header = T)
+            ebmsr12 = readRDS("ebmsr12.rds")
             bmsr12 = ggplot(ebmsr12, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4639,7 +4639,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr12 = read.csv("ebrsr12.csv", header = T)
+            ebrsr12 = readRDS("ebrsr12.rds")
             brsr12 = ggplot(ebrsr12, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4658,7 +4658,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr12 = read.csv("ebnsr12.csv", header = T)
+            ebnsr12 = readRDS("ebnsr12.rds")
             bnsr12 = ggplot(ebnsr12, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4677,7 +4677,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr12 = read.csv("ebhsr12.csv", header = T)
+            ebhsr12 = readRDS("ebhsr12.rds")
             bhsr12 = ggplot(ebhsr12, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4696,7 +4696,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr12 = read.csv("eblsr12.csv", header = T)
+            eblsr12 = readRDS("eblsr12.rds")
             blsr12 =  ggplot(eblsr12, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -4715,7 +4715,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr12 = read.csv("ebmtsr12.csv", header = T)
+            ebmtsr12 = readRDS("ebmtsr12.rds")
             bmtsr12 = ggplot(ebmtsr12, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -4736,7 +4736,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd12 = read.csv("ebmd12.csv", header = T)
+            ebmd12 = readRDS("ebmd12.rds")
             bmd12 = ggplot(ebmd12, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4774,7 +4774,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd12 = read.csv("ebrd12.csv", header = T)
+            ebrd12 = readRDS("ebrd12.rds")
             brd12 = ggplot(ebrd12, aes(x = renda, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4813,7 +4813,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd12 = read.csv("ebnd12.csv", header = T)
+            ebnd12 = readRDS("ebnd12.rds")
             bnd12 = ggplot(ebnd12, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4851,7 +4851,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd12 = read.csv("ebhd12.csv", header = T)
+            ebhd12 = readRDS("ebhd12.rds")
             bhd12 = ggplot(ebhd12, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4889,7 +4889,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld12 = read.csv("ebld12.csv", header = T)
+            ebld12 = readRDS("ebld12.rds")
             bld12 = ggplot(ebld12, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -4927,7 +4927,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd12 = read.csv("ebmtd12.csv", header = T)
+            ebmtd12 = readRDS("ebmtd12.rds")
             bmtd12 = ggplot(ebmtd12, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -4966,7 +4966,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm12 = read.csv("thm12.csv", header = T)
+            thm12 = readRDS("thm12.rds")
             k = thm12$intervalo[2] - thm12$intervalo[1]
             hm12 = ggplot(thm12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -4983,7 +4983,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr12 = read.csv("thr12.csv", header = T)
+            thr12 = readRDS("thr12.rds")
             k = thr12$intervalo[2] - thr12$intervalo[1]
             hr12 = ggplot(thr12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5000,7 +5000,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn12 = read.csv("thn12.csv", header = T)
+            thn12 = readRDS("thn12.rds")
             k = thn12$intervalo[2] - thn12$intervalo[1]
             hn12 = ggplot(thn12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5017,7 +5017,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh12 = read.csv("thh12.csv", header = T)
+            thh12 = readRDS("thh12.rds")
             k = thh12$intervalo[2] - thh12$intervalo[1]
             hh12 = ggplot(thh12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5034,7 +5034,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl12 = read.csv("thl12.csv", header = T)
+            thl12 = readRDS("thl12.rds")
             k = thl12$intervalo[2] - thl12$intervalo[1]
             hl12 = ggplot(thl12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5051,7 +5051,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt12 = read.csv("thmt12.csv", header = T)
+            thmt12 = readRDS("thmt12.rds")
             k = thmt12$intervalo[2] - thmt12$intervalo[1]
             hmt12 = ggplot(thmt12, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5069,7 +5069,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms12 = read.csv("thms12.csv", header = T)
+            thms12 = readRDS("thms12.rds")
             k = thms12$intervalo[2] - thms12$intervalo[1]
             hms12 = ggplot(thms12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5089,7 +5089,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs12 = read.csv("thrs12.csv", header = T)
+            thrs12 = readRDS("thrs12.rds")
             k = thrs12$intervalo[2] - thrs12$intervalo[1]
             hrs12 = ggplot(thrs12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5108,7 +5108,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns12 = read.csv("thns12.csv", header = T)
+            thns12 = readRDS("thns12.rds")
             k = thns12$intervalo[2] - thns12$intervalo[1]
             hns12 = ggplot(thns12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5129,7 +5129,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs12 = read.csv("thhs12.csv", header = T)
+            thhs12 = readRDS("thhs12.rds")
             k = thhs12$intervalo[2] - thhs12$intervalo[1]
             hhs12 = ggplot(thhs12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5150,7 +5150,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls12 = read.csv("thls12.csv", header = T)
+            thls12 = readRDS("thls12.rds")
             k = thls12$intervalo[2] - thls12$intervalo[1]
             hls12 = ggplot(thls12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5171,7 +5171,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts12 = read.csv("thmts12.csv", header = T)
+            thmts12 = readRDS("thmts12.rds")
             k = thmts12$intervalo[2] - thmts12$intervalo[1]
             hmts12 = ggplot(thmts12) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -5193,7 +5193,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr12 = read.csv("thmr12.csv", header = T)
+            thmr12 = readRDS("thmr12.rds")
             k = thmr12$intervalo[2] - thmr12$intervalo[1]
             hmr12 = ggplot(thmr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5211,7 +5211,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr12 = read.csv("thrr12.csv", header = T)
+            thrr12 = readRDS("thrr12.rds")
             k = thrr12$intervalo[2] - thrr12$intervalo[1]
             hrr12 = ggplot(thrr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5229,7 +5229,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr12 = read.csv("thnr12.csv", header = T)
+            thnr12 = readRDS("thnr12.rds")
             k = thnr12$intervalo[2] - thnr12$intervalo[1]
             hnr12 = ggplot(thnr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5247,7 +5247,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr12 = read.csv("thhr12.csv", header = T)
+            thhr12 = readRDS("thhr12.rds")
             k = thhr12$intervalo[2] - thhr12$intervalo[1]
             hhr12 = ggplot(thhr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5265,7 +5265,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr12 = read.csv("thlr12.csv", header = T)
+            thlr12 = readRDS("thlr12.rds")
             k = thlr12$intervalo[2] - thlr12$intervalo[1]
             hlr12 = ggplot(thlr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5283,7 +5283,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr12 = read.csv("thmtr12.csv", header = T)
+            thmtr12 = readRDS("thmtr12.rds")
             k = thmtr12$intervalo[2] - thmtr12$intervalo[1]
             hmtr12 = ggplot(thmtr12,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -5302,7 +5302,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr12 = read.csv("thmsr12.csv", header = T)
+            thmsr12 = readRDS("thmsr12.rds")
             k = thmsr12$intervalo[2] - thmsr12$intervalo[1]
             hmsr12 = ggplot(thmsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5320,7 +5320,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr12 = read.csv("thrsr12.csv", header = T)
+            thrsr12 = readRDS("thrsr12.rds")
             k = thrsr12$intervalo[2] - thrsr12$intervalo[1]
             hrsr12 = ggplot(thrsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5338,7 +5338,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr12 = read.csv("thnsr12.csv", header = T)
+            thnsr12 = readRDS("thnsr12.rds")
             k = thnsr12$intervalo[2] - thnsr12$intervalo[1]
             hnsr12 = ggplot(thnsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5357,7 +5357,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr12 = read.csv("thhsr12.csv", header = T)
+            thhsr12 = readRDS("thhsr12.rds")
             k = thhsr12$intervalo[2] - thhsr12$intervalo[1]
             hhsr12 = ggplot(thhsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5376,7 +5376,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr12 = read.csv("thlsr12.csv", header = T)
+            thlsr12 = readRDS("thlsr12.rds")
             k = thlsr12$intervalo[2] - thlsr12$intervalo[1]
             hlsr12 = ggplot(thlsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5395,7 +5395,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr12 = read.csv("thmtsr12.csv", header = T)
+            thmtsr12 = readRDS("thmtsr12.rds")
             k = thmtsr12$intervalo[2] - thmtsr12$intervalo[1]
             hmtsr12 = ggplot(thmtsr12) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -5415,7 +5415,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd12 = read.csv("thmd12.csv", header = T)
+            thmd12 = readRDS("thmd12.rds")
             k = thmd12$intervalo[2] - thmd12$intervalo[1]
             hmd12 = ggplot(thmd12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5466,7 +5466,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd12 = read.csv("thrd12.csv", header = T)
+            thrd12 = readRDS("thrd12.rds")
             k = thrd12$intervalo[2] - thrd12$intervalo[1]
             hrd12 = ggplot(thrd12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5518,7 +5518,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd12 = read.csv("thnd12.csv", header = T)
+            thnd12 = readRDS("thnd12.rds")
             k = thnd12$intervalo[2] - thnd12$intervalo[1]
             hnd12 = ggplot(thnd12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5570,7 +5570,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd12 = read.csv("thhd12.csv", header = T)
+            thhd12 = readRDS("thhd12.rds")
             k = thhd12$intervalo[2] - thhd12$intervalo[1]
             hhd12 = ggplot(thhd12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5622,7 +5622,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld12 = read.csv("thld12.csv", header = T)
+            thld12 = readRDS("thld12.rds")
             k = thld12$intervalo[2] - thld12$intervalo[1]
             hld12 = ggplot(thld12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5674,7 +5674,7 @@ function(input,output,session){
         if(2012 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd12 = read.csv("thmtd12.csv", header = T)
+            thmtd12 = readRDS("thmtd12.rds")
             k = thmtd12$intervalo[2] - thmtd12$intervalo[1]
             hmtd12 = ggplot(thmtd12) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -5729,7 +5729,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm11 = read.csv("ebm11.csv", header = T)
+            ebm11 = readRDS("ebm11.rds")
             bm11 = ggplot(ebm11, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -5749,7 +5749,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr11 = read.csv("ebr11.csv", header = T)
+            ebr11 = readRDS("ebr11.rds")
             br11 = ggplot(ebr11, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -5769,7 +5769,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn11 = read.csv("ebn11.csv", header = T)
+            ebn11 = readRDS("ebn11.rds")
             bn11 = ggplot(ebn11, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -5789,7 +5789,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh11 = read.csv("ebh11.csv", header = T)
+            ebh11 = readRDS("ebh11.rds")
             bh11 = ggplot(ebh11, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -5809,7 +5809,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl11 = read.csv("ebl11.csv", header = T)
+            ebl11 = readRDS("ebl11.rds")
             bl11 = ggplot(ebl11, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -5828,7 +5828,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt11 = read.csv("ebmt11.csv", header = T)
+            ebmt11 = readRDS("ebmt11.rds")
             bmt11 = ggplot(ebmt11, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5849,7 +5849,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms11 = read.csv("ebms11.csv", header = T)
+            ebms11 = readRDS("ebms11.rds")
             bms11 = ggplot(ebms11, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5868,7 +5868,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs11 = read.csv("ebrs11.csv", header = T)
+            ebrs11 = readRDS("ebrs11.rds")
             brs11 = ggplot(ebrs11, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5887,7 +5887,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns11 = read.csv("ebns11.csv", header = T)
+            ebns11 = readRDS("ebns11.rds")
             bns11 = ggplot(ebns11, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5906,7 +5906,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs11 = read.csv("ebhs11.csv", header = T)
+            ebhs11 = readRDS("ebhs11.rds")
             bhs11 = ggplot(ebhs11, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5925,7 +5925,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls11 = read.csv("ebls11.csv", header = T)
+            ebls11 = readRDS("ebls11.rds")
             bls11 = ggplot(ebls11, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5944,7 +5944,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts11 = read.csv("ebmts11.csv", header = T)
+            ebmts11 = readRDS("ebmts11.rds")
             bmts11 = ggplot(ebmts11, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -5964,7 +5964,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr11 = read.csv("ebmr11.csv", header = T)
+            ebmr11 = readRDS("ebmr11.rds")
             bmr11 = ggplot(ebmr11, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -5983,7 +5983,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr11 = read.csv("ebrr11.csv", header = T)
+            ebrr11 = readRDS("ebrr11.rds")
             brr11 = ggplot(ebrr11, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6002,7 +6002,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr11 = read.csv("ebnr11.csv", header = T)
+            ebnr11 = readRDS("ebnr11.rds")
             bnr11 = ggplot(ebnr11, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6021,7 +6021,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr11 = read.csv("ebhr11.csv", header = T)
+            ebhr11 = readRDS("ebhr11.rds")
             bhr11 = ggplot(ebhr11, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6040,7 +6040,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr11 = read.csv("eblr11.csv", header = T)
+            eblr11 = readRDS("eblr11.rds")
             blr11 = ggplot(eblr11, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6059,7 +6059,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr11 = read.csv("ebmtr11.csv", header = T)
+            ebmtr11 = readRDS("ebmtr11.rds")
             bmtr11 = ggplot(ebmtr11, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6079,7 +6079,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr11 = read.csv("ebmsr11.csv", header = T)
+            ebmsr11 = readRDS("ebmsr11.rds")
             bmsr11 = ggplot(ebmsr11, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6098,7 +6098,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr11 = read.csv("ebrsr11.csv", header = T)
+            ebrsr11 = readRDS("ebrsr11.rds")
             brsr11 = ggplot(ebrsr11, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6117,7 +6117,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr11 = read.csv("ebnsr11.csv", header = T)
+            ebnsr11 = readRDS("ebnsr11.rds")
             bnsr11 = ggplot(ebnsr11, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6136,7 +6136,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr11 = read.csv("ebhsr11.csv", header = T)
+            ebhsr11 = readRDS("ebhsr11.rds")
             bhsr11 = ggplot(ebhsr11, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6155,7 +6155,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr11 = read.csv("eblsr11.csv", header = T)
+            eblsr11 = readRDS("eblsr11.rds")
             blsr11 =  ggplot(eblsr11, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -6174,7 +6174,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr11 = read.csv("ebmtsr11.csv", header = T)
+            ebmtsr11 = readRDS("ebmtsr11.rds")
             bmtsr11 = ggplot(ebmtsr11, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -6195,7 +6195,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd11 = read.csv("ebmd11.csv", header = T)
+            ebmd11 = readRDS("ebmd11.rds")
             bmd11 = ggplot(ebmd11, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6227,7 +6227,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd11 = read.csv("ebrd11.csv", header = T)
+            ebrd11 = readRDS("ebrd11.rds")
             brd11 = ggplot(ebrd11, aes(x = renda, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6260,7 +6260,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd11 = read.csv("ebnd11.csv", header = T)
+            ebnd11 = readRDS("ebnd11.rds")
             bnd11 = ggplot(ebnd11, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6292,7 +6292,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd11 = read.csv("ebhd11.csv", header = T)
+            ebhd11 = readRDS("ebhd11.rds")
             bhd11 = ggplot(ebhd11, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6324,7 +6324,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld11 = read.csv("ebld11.csv", header = T)
+            ebld11 = readRDS("ebld11.rds")
             bld11 = ggplot(ebld11, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -6356,7 +6356,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd11 = read.csv("ebmtd11.csv", header = T)
+            ebmtd11 = readRDS("ebmtd11.rds")
             bmtd11 = ggplot(ebmtd11, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -6389,7 +6389,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm11 = read.csv("thm11.csv", header = T)
+            thm11 = readRDS("thm11.rds")
             k = thm11$intervalo[2] - thm11$intervalo[1]
             hm11 = ggplot(thm11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6406,7 +6406,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr11 = read.csv("thr11.csv", header = T)
+            thr11 = readRDS("thr11.rds")
             k = thr11$intervalo[2] - thr11$intervalo[1]
             hr11 = ggplot(thr11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6423,7 +6423,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn11 = read.csv("thn11.csv", header = T)
+            thn11 = readRDS("thn11.rds")
             k = thn11$intervalo[2] - thn11$intervalo[1]
             hn11 = ggplot(thn11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6440,7 +6440,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh11 = read.csv("thh11.csv", header = T)
+            thh11 = readRDS("thh11.rds")
             k = thh11$intervalo[2] - thh11$intervalo[1]
             hh11 = ggplot(thh11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6457,7 +6457,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl11 = read.csv("thl11.csv", header = T)
+            thl11 = readRDS("thl11.rds")
             k = thl11$intervalo[2] - thl11$intervalo[1]
             hl11 = ggplot(thl11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6474,7 +6474,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt11 = read.csv("thmt11.csv", header = T)
+            thmt11 = readRDS("thmt11.rds")
             k = thmt11$intervalo[2] - thmt11$intervalo[1]
             hmt11 = ggplot(thmt11, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6492,7 +6492,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms11 = read.csv("thms11.csv", header = T)
+            thms11 = readRDS("thms11.rds")
             k = thms11$intervalo[2] - thms11$intervalo[1]
             hms11 = ggplot(thms11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6512,7 +6512,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs11 = read.csv("thrs11.csv", header = T)
+            thrs11 = readRDS("thrs11.rds")
             k = thrs11$intervalo[2] - thrs11$intervalo[1]
             hrs11 = ggplot(thrs11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6531,7 +6531,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns11 = read.csv("thns11.csv", header = T)
+            thns11 = readRDS("thns11.rds")
             k = thns11$intervalo[2] - thns11$intervalo[1]
             hns11 = ggplot(thns11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6552,7 +6552,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs11 = read.csv("thhs11.csv", header = T)
+            thhs11 = readRDS("thhs11.rds")
             k = thhs11$intervalo[2] - thhs11$intervalo[1]
             hhs11 = ggplot(thhs11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6573,7 +6573,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls11 = read.csv("thls11.csv", header = T)
+            thls11 = readRDS("thls11.rds")
             k = thls11$intervalo[2] - thls11$intervalo[1]
             hls11 = ggplot(thls11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6594,7 +6594,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts11 = read.csv("thmts11.csv", header = T)
+            thmts11 = readRDS("thmts11.rds")
             k = thmts11$intervalo[2] - thmts11$intervalo[1]
             hmts11 = ggplot(thmts11) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -6616,7 +6616,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr11 = read.csv("thmr11.csv", header = T)
+            thmr11 = readRDS("thmr11.rds")
             k = thmr11$intervalo[2] - thmr11$intervalo[1]
             hmr11 = ggplot(thmr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6634,7 +6634,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr11 = read.csv("thrr11.csv", header = T)
+            thrr11 = readRDS("thrr11.rds")
             k = thrr11$intervalo[2] - thrr11$intervalo[1]
             hrr11 = ggplot(thrr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6652,7 +6652,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr11 = read.csv("thnr11.csv", header = T)
+            thnr11 = readRDS("thnr11.rds")
             k = thnr11$intervalo[2] - thnr11$intervalo[1]
             hnr11 = ggplot(thnr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6670,7 +6670,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr11 = read.csv("thhr11.csv", header = T)
+            thhr11 = readRDS("thhr11.rds")
             k = thhr11$intervalo[2] - thhr11$intervalo[1]
             hhr11 = ggplot(thhr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6688,7 +6688,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr11 = read.csv("thlr11.csv", header = T)
+            thlr11 = readRDS("thlr11.rds")
             k = thlr11$intervalo[2] - thlr11$intervalo[1]
             hlr11 = ggplot(thlr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6706,7 +6706,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr11 = read.csv("thmtr11.csv", header = T)
+            thmtr11 = readRDS("thmtr11.rds")
             k = thmtr11$intervalo[2] - thmtr11$intervalo[1]
             hmtr11 = ggplot(thmtr11,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -6725,7 +6725,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr11 = read.csv("thmsr11.csv", header = T)
+            thmsr11 = readRDS("thmsr11.rds")
             k = thmsr11$intervalo[2] - thmsr11$intervalo[1]
             hmsr11 = ggplot(thmsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6744,7 +6744,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr11 = read.csv("thrsr11.csv", header = T)
+            thrsr11 = readRDS("thrsr11.rds")
             k = thrsr11$intervalo[2] - thrsr11$intervalo[1]
             hrsr11 = ggplot(thrsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6763,7 +6763,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr11 = read.csv("thnsr11.csv", header = T)
+            thnsr11 = readRDS("thnsr11.rds")
             k = thnsr11$intervalo[2] - thnsr11$intervalo[1]
             hnsr11 = ggplot(thnsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6782,7 +6782,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr11 = read.csv("thhsr11.csv", header = T)
+            thhsr11 = readRDS("thhsr11.rds")
             k = thhsr11$intervalo[2] - thhsr11$intervalo[1]
             hhsr11 = ggplot(thhsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6801,7 +6801,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr11 = read.csv("thlsr11.csv", header = T)
+            thlsr11 = readRDS("thlsr11.rds")
             k = thlsr11$intervalo[2] - thlsr11$intervalo[1]
             hlsr11 = ggplot(thlsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6820,7 +6820,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr11 = read.csv("thmtsr11.csv", header = T)
+            thmtsr11 = readRDS("thmtsr11.rds")
             k = thmtsr11$intervalo[2] - thmtsr11$intervalo[1]
             hmtsr11 = ggplot(thmtsr11) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -6840,7 +6840,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd11 = read.csv("thmd11.csv", header = T)
+            thmd11 = readRDS("thmd11.rds")
             k = thmd11$intervalo[2] - thmd11$intervalo[1]
             hmd11 = ggplot(thmd11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -6879,7 +6879,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd11 = read.csv("thrd11.csv", header = T)
+            thrd11 = readRDS("thrd11.rds")
             k = thrd11$intervalo[2] - thrd11$intervalo[1]
             hrd11 = ggplot(thrd11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -6918,7 +6918,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd11 = read.csv("thnd11.csv", header = T)
+            thnd11 = readRDS("thnd11.rds")
             k = thnd11$intervalo[2] - thnd11$intervalo[1]
             hnd11 = ggplot(thnd11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -6957,7 +6957,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd11 = read.csv("thhd11.csv", header = T)
+            thhd11 = readRDS("thhd11.rds")
             k = thhd11$intervalo[2] - thhd11$intervalo[1]
             hhd11 = ggplot(thhd11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -6994,7 +6994,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld11 = read.csv("thld11.csv", header = T)
+            thld11 = readRDS("thld11.rds")
             k = thld11$intervalo[2] - thld11$intervalo[1]
             hld11 = ggplot(thld11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -7033,7 +7033,7 @@ function(input,output,session){
         if(2011 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd11 = read.csv("thmtd11.csv", header = T)
+            thmtd11 = readRDS("thmtd11.rds")
             k = thmtd11$intervalo[2] - thmtd11$intervalo[1]
             hmtd11 = ggplot(thmtd11) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -7087,7 +7087,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm10 = read.csv("ebm10.csv", header = T)
+            ebm10 = readRDS("ebm10.rds")
             bm10 = ggplot(ebm10, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -7107,7 +7107,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr10 = read.csv("ebr10.csv", header = T)
+            ebr10 = readRDS("ebr10.rds")
             br10 = ggplot(ebr10, aes(x = "x", middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -7127,7 +7127,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn10 = read.csv("ebn10.csv", header = T)
+            ebn10 = readRDS("ebn10.rds")
             bn10 = ggplot(ebn10, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -7147,7 +7147,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh10 = read.csv("ebh10.csv", header = T)
+            ebh10 = readRDS("ebh10.rds")
             bh10 = ggplot(ebh10, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -7167,7 +7167,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl10 = read.csv("ebl10.csv", header = T)
+            ebl10 = readRDS("ebl10.rds")
             bl10 = ggplot(ebl10, aes(x = "x", y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge)) +
@@ -7186,7 +7186,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt10 = read.csv("ebmt10.csv", header = T)
+            ebmt10 = readRDS("ebmt10.rds")
             bmt10 = ggplot(ebmt10, aes(x = "x", y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7207,7 +7207,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms10 = read.csv("ebms10.csv", header = T)
+            ebms10 = readRDS("ebms10.rds")
             bms10 = ggplot(ebms10, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7226,7 +7226,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs10 = read.csv("ebrs10.csv", header = T)
+            ebrs10 = readRDS("ebrs10.rds")
             brs10 = ggplot(ebrs10, aes(x = sexo, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7245,7 +7245,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns10 = read.csv("ebns10.csv", header = T)
+            ebns10 = readRDS("ebns10.rds")
             bns10 = ggplot(ebns10, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7264,7 +7264,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs10 = read.csv("ebhs10.csv", header = T)
+            ebhs10 = readRDS("ebhs10.rds")
             bhs10 = ggplot(ebhs10, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7283,7 +7283,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls10 = read.csv("ebls10.csv", header = T)
+            ebls10 = readRDS("ebls10.rds")
             bls10 = ggplot(ebls10, aes(x = sexo, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7302,7 +7302,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts10 = read.csv("ebmts10.csv", header = T)
+            ebmts10 = readRDS("ebmts10.rds")
             bmts10 = ggplot(ebmts10, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7322,7 +7322,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr10 = read.csv("ebmr10.csv", header = T)
+            ebmr10 = readRDS("ebmr10.rds")
             bmr10 = ggplot(ebmr10, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7341,7 +7341,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr10 = read.csv("ebrr10.csv", header = T)
+            ebrr10 = readRDS("ebrr10.rds")
             brr10 = ggplot(ebrr10, aes(x = reg, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7360,7 +7360,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr10 = read.csv("ebnr10.csv", header = T)
+            ebnr10 = readRDS("ebnr10.rds")
             bnr10 = ggplot(ebnr10, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7379,7 +7379,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr10 = read.csv("ebhr10.csv", header = T)
+            ebhr10 = readRDS("ebhr10.rds")
             bhr10 = ggplot(ebhr10, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7398,7 +7398,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr10 = read.csv("eblr10.csv", header = T)
+            eblr10 = readRDS("eblr10.rds")
             blr10 = ggplot(eblr10, aes(x = reg, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7417,7 +7417,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr10 = read.csv("ebmtr10.csv", header = T)
+            ebmtr10 = readRDS("ebmtr10.rds")
             bmtr10 = ggplot(ebmtr10, aes(x = reg, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7437,7 +7437,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr10 = read.csv("ebmsr10.csv", header = T)
+            ebmsr10 = readRDS("ebmsr10.rds")
             bmsr10 = ggplot(ebmsr10, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7456,7 +7456,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr10 = read.csv("ebrsr10.csv", header = T)
+            ebrsr10 = readRDS("ebrsr10.rds")
             brsr10 = ggplot(ebrsr10, aes(x = sexo, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7475,7 +7475,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr10 = read.csv("ebnsr10.csv", header = T)
+            ebnsr10 = readRDS("ebnsr10.rds")
             bnsr10 = ggplot(ebnsr10, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7494,7 +7494,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr10 = read.csv("ebhsr10.csv", header = T)
+            ebhsr10 = readRDS("ebhsr10.rds")
             bhsr10 = ggplot(ebhsr10, aes(x = sexo, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7513,7 +7513,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr10 = read.csv("eblsr10.csv", header = T)
+            eblsr10 = readRDS("eblsr10.rds")
             blsr10 =  ggplot(eblsr10, aes(x = sexo, y = out, middle = median,
                                           ymin = lower.whisker, ymax = upper.whisker,
                                           lower = lower.hinge, upper = upper.hinge,
@@ -7532,7 +7532,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr10 = read.csv("ebmtsr10.csv", header = T)
+            ebmtsr10 = readRDS("ebmtsr10.rds")
             bmtsr10 = ggplot(ebmtsr10, aes(x = sexo, y = out, middle = median,
                                            ymin = lower.whisker, ymax = upper.whisker,
                                            lower = lower.hinge, upper = upper.hinge,
@@ -7553,7 +7553,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd10 = read.csv("ebmd10.csv", header = T)
+            ebmd10 = readRDS("ebmd10.rds")
             bmd10 = ggplot(ebmd10, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7581,7 +7581,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd10 = read.csv("ebrd10.csv", header = T)
+            ebrd10 = readRDS("ebrd10.rds")
             brd10 = ggplot(ebrd10, aes(x = renda, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7610,7 +7610,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd10 = read.csv("ebnd10.csv", header = T)
+            ebnd10 = readRDS("ebnd10.rds")
             bnd10 = ggplot(ebnd10, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7639,7 +7639,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd10 = read.csv("ebhd10.csv", header = T)
+            ebhd10 = readRDS("ebhd10.rds")
             bhd10 = ggplot(ebhd10, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7668,7 +7668,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld10 = read.csv("ebld10.csv", header = T)
+            ebld10 = readRDS("ebld10.rds")
             bld10 = ggplot(ebld10, aes(x = renda, y = out, middle = median,
                                        ymin = lower.whisker, ymax = upper.whisker,
                                        lower = lower.hinge, upper = upper.hinge,
@@ -7697,7 +7697,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd10 = read.csv("ebmtd10.csv", header = T)
+            ebmtd10 = readRDS("ebmtd10.rds")
             bmtd10 = ggplot(ebmtd10, aes(x = renda, y = out, middle = median,
                                          ymin = lower.whisker, ymax = upper.whisker,
                                          lower = lower.hinge, upper = upper.hinge,
@@ -7727,7 +7727,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm10 = read.csv("thm10.csv", header = T)
+            thm10 = readRDS("thm10.rds")
             k = thm10$intervalo[2] - thm10$intervalo[1]
             hm10 = ggplot(thm10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7744,7 +7744,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr10 = read.csv("thr10.csv", header = T)
+            thr10 = readRDS("thr10.rds")
             k = thr10$intervalo[2] - thr10$intervalo[1]
             hr10 = ggplot(thr10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7761,7 +7761,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn10 = read.csv("thn10.csv", header = T)
+            thn10 = readRDS("thn10.rds")
             k = thn10$intervalo[2] - thn10$intervalo[1]
             hn10 = ggplot(thn10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7778,7 +7778,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh10 = read.csv("thh10.csv", header = T)
+            thh10 = readRDS("thh10.rds")
             k = thh10$intervalo[2] - thh10$intervalo[1]
             hh10 = ggplot(thh10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7795,7 +7795,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl10 = read.csv("thl10.csv", header = T)
+            thl10 = readRDS("thl10.rds")
             k = thl10$intervalo[2] - thl10$intervalo[1]
             hl10 = ggplot(thl10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7812,7 +7812,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt10 = read.csv("thmt10.csv", header = T)
+            thmt10 = readRDS("thmt10.rds")
             k = thmt10$intervalo[2] - thmt10$intervalo[1]
             hmt10 = ggplot(thmt10, aes(x=intervalo, y=freq)) +
               geom_bar(width = k,stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7830,7 +7830,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms10 = read.csv("thms10.csv", header = T)
+            thms10 = readRDS("thms10.rds")
             k = thms10$intervalo[2] - thms10$intervalo[1]
             hms10 = ggplot(thms10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7850,7 +7850,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs10 = read.csv("thrs10.csv", header = T)
+            thrs10 = readRDS("thrs10.rds")
             k = thrs10$intervalo[2] - thrs10$intervalo[1]
             hrs10 = ggplot(thrs10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7869,7 +7869,7 @@ function(input,output,session){
       if("Histograma" %in% input$grafico){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
-            thns10 = read.csv("thns10.csv", header = T)
+            thns10 = readRDS("thns10.rds")
             k = thns10$intervalo[2] - thns10$intervalo[1]
             hns10 = ggplot(thns10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7890,7 +7890,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs10 = read.csv("thhs10.csv", header = T)
+            thhs10 = readRDS("thhs10.rds")
             k = thhs10$intervalo[2] - thhs10$intervalo[1]
             hhs10 = ggplot(thhs10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7911,7 +7911,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls10 = read.csv("thls10.csv", header = T)
+            thls10 = readRDS("thls10.rds")
             k = thls10$intervalo[2] - thls10$intervalo[1]
             hls10 = ggplot(thls10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7932,7 +7932,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts10 = read.csv("thmts10.csv", header = T)
+            thmts10 = readRDS("thmts10.rds")
             k = thmts10$intervalo[2] - thmts10$intervalo[1]
             hmts10 = ggplot(thmts10) + theme_bw() +
               geom_bar(aes(x=intervalo, y=F, fill="F"),
@@ -7951,7 +7951,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr10 = read.csv("thmr10.csv", header = T)
+            thmr10 = readRDS("thmr10.rds")
             k = thmr10$intervalo[2] - thmr10$intervalo[1]
             hmr10 = ggplot(thmr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7966,7 +7966,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr10 = read.csv("thrr10.csv", header = T)
+            thrr10 = readRDS("thrr10.rds")
             k = thrr10$intervalo[2] - thrr10$intervalo[1]
             hrr10 = ggplot(thrr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7981,7 +7981,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr10 = read.csv("thnr10.csv", header = T)
+            thnr10 = readRDS("thnr10.rds")
             k = thnr10$intervalo[2] - thnr10$intervalo[1]
             hnr10 = ggplot(thnr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -7996,7 +7996,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr10 = read.csv("thhr10.csv", header = T)
+            thhr10 = readRDS("thhr10.rds")
             k = thhr10$intervalo[2] - thhr10$intervalo[1]
             hhr10 = ggplot(thhr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -8011,7 +8011,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr10 = read.csv("thlr10.csv", header = T)
+            thlr10 = readRDS("thlr10.rds")
             k = thlr10$intervalo[2] - thlr10$intervalo[1]
             hlr10 = ggplot(thlr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -8029,7 +8029,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr10 = read.csv("thmtr10.csv", header = T)
+            thmtr10 = readRDS("thmtr10.rds")
             k = thmtr10$intervalo[2] - thmtr10$intervalo[1]
             hmtr10 = ggplot(thmtr10,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=k, stat="identity",colour="aquamarine4", fill="aquamarine4") +
@@ -8048,7 +8048,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr10 = read.csv("thmsr10.csv", header = T)
+            thmsr10 = readRDS("thmsr10.rds")
             k = thmsr10$intervalo[2] - thmsr10$intervalo[1]
             hmsr10 = ggplot(thmsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8067,7 +8067,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr10 = read.csv("thrsr10.csv", header = T)
+            thrsr10 = readRDS("thrsr10.rds")
             k = thrsr10$intervalo[2] - thrsr10$intervalo[1]
             hrsr10 = ggplot(thrsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8086,7 +8086,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr10 = read.csv("thnsr10.csv", header = T)
+            thnsr10 = readRDS("thnsr10.rds")
             k = thnsr10$intervalo[2] - thnsr10$intervalo[1]
             hnsr10 = ggplot(thnsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8105,7 +8105,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr10 = read.csv("thhsr10.csv", header = T)
+            thhsr10 = readRDS("thhsr10.rds")
             k = thhsr10$intervalo[2] - thhsr10$intervalo[1]
             hhsr10 = ggplot(thhsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8124,7 +8124,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr10 = read.csv("thlsr10.csv", header = T)
+            thlsr10 = readRDS("thlsr10.rds")
             k = thlsr10$intervalo[2] - thlsr10$intervalo[1]
             hlsr10 = ggplot(thlsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8143,7 +8143,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr10 = read.csv("thmtsr10.csv", header = T)
+            thmtsr10 = readRDS("thmtsr10.rds")
             k = thmtsr10$intervalo[2] - thmtsr10$intervalo[1]
             hmtsr10 = ggplot(thmtsr10) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=k, stat="identity", alpha = 0.5) +
@@ -8163,7 +8163,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd10 = read.csv("thmd10.csv", header = T)
+            thmd10 = readRDS("thmd10.rds")
             k = thmd10$intervalo[2] - thmd10$intervalo[1]
             hmd10 = ggplot(thmd10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8196,7 +8196,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd10 = read.csv("thrd10.csv", header = T)
+            thrd10 = readRDS("thrd10.rds")
             k = thrd10$intervalo[2] - thrd10$intervalo[1]
             hrd10 = ggplot(thrd10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8230,7 +8230,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd10 = read.csv("thnd10.csv", header = T)
+            thnd10 = readRDS("thnd10.rds")
             k = thnd10$intervalo[2] - thnd10$intervalo[1]
             hnd10 = ggplot(thnd10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8264,7 +8264,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd10 = read.csv("thhd10.csv", header = T)
+            thhd10 = readRDS("thhd10.rds")
             k = thhd10$intervalo[2] - thhd10$intervalo[1]
             hhd10 = ggplot(thhd10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8298,7 +8298,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld10 = read.csv("thld10.csv", header = T)
+            thld10 = readRDS("thld10.rds")
             k = thld10$intervalo[2] - thld10$intervalo[1]
             hld10 = ggplot(thld10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8332,7 +8332,7 @@ function(input,output,session){
         if(2010 %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd10 = read.csv("thmtd10.csv", header = T)
+            thmtd10 = readRDS("thmtd10.rds")
             k = thmtd10$intervalo[2] - thmtd10$intervalo[1]
             hmtd10 = ggplot(thmtd10) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=k, stat="identity", alpha = 0.65) +
@@ -8369,7 +8369,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebm = read.csv("ebm.csv", header = T)
+            ebm = readRDS("ebm.rds")
             bm = ggplot(ebm, aes(x = e, y = out, middle = median,
                                   ymin = lower.whisker, ymax = upper.whisker,
                                   lower = lower.hinge, upper = upper.hinge,
@@ -8385,7 +8385,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebr = read.csv("ebr.csv", header = T)
+            ebr = readRDS("ebr.rds")
             br = ggplot(ebr, aes(x = e, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8401,7 +8401,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebn = read.csv("ebn.csv", header = T)
+            ebn = readRDS("ebn.rds")
             bn = ggplot(ebn, aes(x = e, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8417,7 +8417,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebh = read.csv("ebh.csv", header = T)
+            ebh = readRDS("ebh.rds")
             bh = ggplot(enh, aes(x = e, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8433,7 +8433,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebl = read.csv("ebl.csv", header = T)
+            ebl = readRDS("ebl.rds")
             bl = ggplot(ebl, aes(x = e, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8449,7 +8449,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            ebmt = read.csv("ebmt.csv", header = T)
+            ebmt = readRDS("ebmt.rds")
             bmt = ggplot(ebmt, aes(x = e, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8467,7 +8467,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebms = read.csv("ebms.csv", header = T)
+            ebms = readRDS("ebms.rds")
             bms = ggplot(ebms, aes(x = sexo, y = out, middle = median,
                                ymin = lower.whisker, ymax = upper.whisker,
                                lower = lower.hinge, upper = upper.hinge,
@@ -8483,7 +8483,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebrs = read.csv("ebrs.csv", header = T)
+            ebrs = readRDS("ebrs.rds")
             brs = ggplot(ebrs, aes(x = sexo, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
@@ -8499,7 +8499,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebns = read.csv("ebns.csv", header = T)
+            ebns = readRDS("ebns.rds")
             bns = ggplot(ebns, aes(x = sexo, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
@@ -8515,7 +8515,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebhs = read.csv("ebhs.csv", header = T)
+            ebhs = readRDS("ebhs.rds")
             bhs = ggplot(ebhs, aes(x = sexo, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
@@ -8531,7 +8531,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebls = read.csv("ebls.csv", header = T)
+            ebls = readRDS("ebls.rds")
             bls = ggplot(ebls, aes(x = sexo, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
@@ -8547,7 +8547,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            ebmts = read.csv("ebmts.csv", header = T)
+            ebmts = readRDS("ebmts.rds")
             bmts = ggplot(ebmts, aes(x = sexo, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
@@ -8565,11 +8565,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmr = read.csv("ebmr.csv", header = T)
+            ebmr = readRDS("ebmr.rds")
             bmr = ggplot(ebmr, aes(x = reg, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
-                                   fill = reg, alpha=0.85)) +
+                                   fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Média no ENEM",
                    title="Boxplot das Médias no ENEM Segundo o Ano e Região")+
@@ -8581,11 +8581,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebrr = read.csv("ebrr.csv", header = T)
+            ebrr = readRDS("ebrr.rds")
             brr = ggplot(ebrr, aes(x = reg, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
-                                   fill = reg, alpha=0.85)) +
+                                   fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Média da Redação no ENEM",
                    title="Boxplot das Médias da Redação no ENEM Segundo o Ano e Região")+
@@ -8597,11 +8597,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebnr = read.csv("ebnr.csv", header = T)
+            ebnr = readRDS("ebnr.rds")
             bnr = ggplot(ebnr, aes(x = reg, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
-                                   fill = reg, alpha=0.85)) +
+                                   fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Nota em Ciências da Natureza no ENEM",
                    title="Boxplot das Notas em Ciências da Natureza no ENEM Segundo o Ano e Região")+
@@ -8613,11 +8613,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebhr = read.csv("ebhr.csv", header = T)
+            ebhr = readRDS("ebhr.rds")
             bhr = ggplot(ebhr, aes(x = reg, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
-                                   fill = reg, alpha=0.85)) +
+                                   fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Nota em Ciências Humanas no ENEM",
                    title="Boxplot das Notas em Ciências Humanas no ENEM Segundo o Ano e Região")+
@@ -8629,11 +8629,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            eblr = read.csv("eblr.csv", header = T)
+            eblr = readRDS("eblr.rds")
             blr = ggplot(eblr, aes(x = reg, y = out, middle = median,
                                    ymin = lower.whisker, ymax = upper.whisker,
                                    lower = lower.hinge, upper = upper.hinge,
-                                   fill = reg, alpha=0.85)) +
+                                   fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Nota em Linguagens e Códigos no ENEM",
                    title="Boxplot das Notas em Linguagens e Códigos no ENEM Segundo o Ano e Região")+
@@ -8645,16 +8645,16 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtr = read.csv("ebmtr.csv", header = T)
+            ebmtr = readRDS("ebmtr.rds")
             bmtr = ggplot(ebmtr, aes(x = reg, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
-                                     fill = reg, alpha=0.85)) +
+                                     fill = reg)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Região",y="Nota em Matemática no ENEM",
                    title="Boxplot das Notas em Matemática no ENEM Segundo o Ano e Região")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
-            print(bmts)
+            print(bmtr)
           }}}}
     
     ## por sexo e região
@@ -8663,7 +8663,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmsr = read.csv("ebmsr.csv", header = T)
+            ebmsr = readRDS("ebmsr.rds")
             bmsr = ggplot(ebmsr, aes(x = sexo, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
@@ -8680,11 +8680,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebrsr = read.csv("ebrsr.csv", header = T)
+            ebrsr = readRDS("ebrsr.rds")
             brsr = ggplot(ebrsr, aes(x = sexo, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
-                                     fill = sexo, alpha=0.85)) +
+                                     fill = sexo)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Sexo",y="Média no ENEM",
                    title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
@@ -8697,7 +8697,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebnsr = read.csv("ebnsr.csv", header = T)
+            ebnsr = readRDS("ebnsr.rds")
             bnsr = ggplot(ebnsr, aes(x = sexo, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -8714,7 +8714,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebhsr = read.csv("ebhsr.csv", header = T)
+            ebhsr = readRDS("ebhsr.rds")
             bhsr = ggplot(ebhsr, aes(x = sexo, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -8731,7 +8731,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            eblsr = read.csv("eblsr.csv", header = T)
+            eblsr = readRDS("eblsr.rds")
             blsr = ggplot(eblsr, aes(x = sexo, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -8748,7 +8748,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            ebmtsr = read.csv("ebmtsr.csv", header = T)
+            ebmtsr = readRDS("ebmtsr.rds")
             bmtsr = ggplot(ebmtsr, aes(x = sexo, y = out, middle = median,
                                      ymin = lower.whisker, ymax = upper.whisker,
                                      lower = lower.hinge, upper = upper.hinge,
@@ -8767,7 +8767,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmd = read.csv("ebmd.csv", header = T)
+            ebmd = readRDS("ebmd.rds")
             bmd = ggplot(ebmd, aes(x = renda, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
@@ -8784,11 +8784,11 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebrd = read.csv("ebrd.csv", header = T)
+            ebrd = readRDS("ebrd.rds")
             brd = ggplot(ebrd, aes(x = renda, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
-                                fill = renda, alpha=0.85)) +
+                                fill = renda)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
               labs(x="Renda",y="Média no ENEM",
                    title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
@@ -8801,7 +8801,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebnd = read.csv("ebnd.csv", header = T)
+            ebnd = readRDS("ebnd.rds")
             bnd = ggplot(ebnd, aes(x = renda, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
@@ -8818,7 +8818,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebhd = read.csv("ebhd.csv", header = T)
+            ebhd = readRDS("ebhd.rds")
             bhd = ggplot(ebhd, aes(x = renda, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
@@ -8835,7 +8835,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebld = read.csv("ebld.csv", header = T)
+            ebld = readRDS("ebld.rds")
             bld = ggplot(ebld, aes(x = renda, y = out, middle = median,
                                 ymin = lower.whisker, ymax = upper.whisker,
                                 lower = lower.hinge, upper = upper.hinge,
@@ -8852,7 +8852,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            ebmtd = read.csv("ebmtd.csv", header = T)
+            ebmtd = readRDS("ebmtd.rds")
             bmtd = ggplot(ebmtd, aes(x = renda, y = out, middle = median,
                                  ymin = lower.whisker, ymax = upper.whisker,
                                  lower = lower.hinge, upper = upper.hinge,
@@ -8871,7 +8871,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thm = read.csv("thm.csv", header = T)
+            thm = readRDS("thm.rds")
             hm = ggplot(thm,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Média no ENEM", y="Proporção",
@@ -8885,7 +8885,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thr = read.csv("thr.csv", header = T)
+            thr = readRDS("thr.rds")
             hr = ggplot(thr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Média da Redação no ENEM", y="Proporção",
@@ -8899,7 +8899,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thn = read.csv("thn.csv", header = T)
+            thn = readRDS("thn.rds")
             hn = ggplot(thn,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Ciências da Natureza", y="Proporção",
@@ -8913,7 +8913,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thh = read.csv("thh.csv", header = T)
+            thh = readRDS("thh.rds")
             hh = ggplot(thh,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Ciências Humanas", y="Proporção",
@@ -8927,7 +8927,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thl = read.csv("thl.csv", header = T)
+            thl = readRDS("thl.rds")
             hl = ggplot(thl,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Linguagens e Códigos", y="Proporção",
@@ -8941,7 +8941,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Brasil" %in% input$vcategorica){
             rm(list = ls())
-            thmt = read.csv("thmt.csv", header = T)
+            thmt = readRDS("thmt.rds")
             hmt = ggplot(thmt,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Matemática", y="Proporção",
@@ -8957,7 +8957,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thms = read.csv("thms.csv", header = T)
+            thms = readRDS("thms.rds")
             hms = ggplot(thms) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -8971,7 +8971,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thrs = read.csv("thrs.csv", header = T)
+            thrs = readRDS("thrs.rds")
             hrs = ggplot(thrs) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -8985,7 +8985,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thns = read.csv("thns.csv", header = T)
+            thns = readRDS("thns.rds")
             hns = ggplot(thns) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -8999,7 +8999,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thhs = read.csv("thhs.csv", header = T)
+            thhs = readRDS("thhs.rds")
             hhs = ggplot(thhs) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9013,7 +9013,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thls = read.csv("thls.csv", header = T)
+            thls = readRDS("thls.rds")
             hls = ggplot(thls) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9027,7 +9027,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo" %in% input$vcategorica){
             rm(list = ls())
-            thmts = read.csv("thmts.csv", header = T)
+            thmts = readRDS("thmts.rds")
             hmts = ggplot(thmts) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9043,7 +9043,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmr = read.csv("thmr.csv", header = T)
+            thmr = readRDS("thmr.rds")
             hmr = ggplot(thmr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Média no ENEM", y="Proporção",
@@ -9057,7 +9057,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thrr = read.csv("thrr.csv", header = T)
+            thrr = readRDS("thrr.rds")
             hrr = ggplot(thrr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Média da Redação no ENEM", y="Proporção",
@@ -9071,7 +9071,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thnr = read.csv("thnr.csv", header = T)
+            thnr = readRDS("thnr.rds")
             hnr = ggplot(thnr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Ciências da Natureza no ENEM", y="Proporção",
@@ -9085,7 +9085,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thhr = read.csv("thhr.csv", header = T)
+            thhr = readRDS("thhr.rds")
             hhr = ggplot(thhr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Ciências Humanas no ENEM", y="Proporção",
@@ -9099,7 +9099,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thlr = read.csv("thlr.csv", header = T)
+            thlr = readRDS("thlr.rds")
             hlr = ggplot(thlr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Linguagens e Códigos no ENEM", y="Proporção",
@@ -9113,7 +9113,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por região" %in% input$vcategorica){
             rm(list = ls())
-            thmtr = read.csv("thmtr.csv", header = T)
+            thmtr = readRDS("thmtr.rds")
             hmtr = ggplot(thmtr,aes(x=intervalo, y=prop), alpha=0.5) +
               geom_bar(width=30, stat="identity",colour="aquamarine4", fill="aquamarine4") +
               labs(x="Nota em Matemática no ENEM", y="Proporção",
@@ -9129,7 +9129,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmsr = read.csv("thmsr.csv", header = T)
+            thmsr = readRDS("thmsr.rds")
             hmsr = ggplot(thmsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9144,7 +9144,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thrsr = read.csv("thrsr.csv", header = T)
+            thrsr = readRDS("thrsr.rds")
             hrsr = ggplot(thrsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9159,7 +9159,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thnsr = read.csv("thnsr.csv", header = T)
+            thnsr = readRDS("thnsr.rds")
             hnsr = ggplot(thnsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9174,7 +9174,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thhsr = read.csv("thhsr.csv", header = T)
+            thhsr = readRDS("thhsr.rds")
             hhsr = ggplot(thhsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9189,7 +9189,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thlsr = read.csv("thlsr.csv", header = T)
+            thlsr = readRDS("thlsr.rds")
             hlsr = ggplot(thlsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9204,7 +9204,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por sexo e região" %in% input$vcategorica){
             rm(list = ls())
-            thmtsr = read.csv("thmtsr.csv", header = T)
+            thmtsr = readRDS("thmtsr.rds")
             hmtsr = ggplot(thmtsr) +
               geom_bar(aes(x=intervalo, y=F, fill="F"),width=30, stat="identity", alpha = 0.5) +
               geom_bar(aes(x=intervalo, y=M, fill="M"),width=30, stat="identity", alpha = 0.5) +
@@ -9221,7 +9221,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmd = read.csv("thmd.csv", header = T)
+            thmd = readRDS("thmd.rds")
             hmd = ggplot(thmd) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9251,7 +9251,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thrd = read.csv("thrd.csv", header = T)
+            thrd = readRDS("thrd.rds")
             hrd = ggplot(thrd) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9281,7 +9281,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thnd = read.csv("thnd.csv", header = T)
+            thnd = readRDS("thnd.rds")
             hnd = ggplot(thnd) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9311,7 +9311,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thhd = read.csv("thhd.csv", header = T)
+            thhd = readRDS("thhd.rds")
             hhd = ggplot(thhd) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9341,7 +9341,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thld = read.csv("thld.csv", header = T)
+            thld = readRDS("thld.rds")
             hld = ggplot(thld) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9371,7 +9371,7 @@ function(input,output,session){
         if("Todos os anos" %in% input$anos){
           if("Por renda" %in% input$vcategorica){
             rm(list = ls())
-            thmtd = read.csv("thmtd.csv", header = T)
+            thmtd = readRDS("thmtd.rds")
             hmtd = ggplot(thmtd) +
               geom_bar(aes(x=intervalo, y=A, fill="A"),width=30, stat="identity", alpha = 0.65) +
               geom_bar(aes(x=intervalo, y=B, fill="B"),width=30, stat="identity", alpha = 0.65) +
@@ -9553,7 +9553,7 @@ function(input,output,session){
                                                                                                                                                             if("Nota em Matemática" %in% input$nota){
                                                                                                                                                               a = read.table("smt10.txt")
                                                                                                                                                               a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2010")
-                                                                                                                                                              kable_styling(a.html, "striped")}}}}}}}
+                                                                                                                                                              kable_styling(a.html, "striped")}}}}}}}else{
                                                                                                                                       #todos os anos
                                                                                                                                       if("Todos os anos" %in% input$anos){
                                                                                                                                         if("Média Geral" %in% input$nota){
@@ -9579,7 +9579,7 @@ function(input,output,session){
                                                                                                                                                             if("Nota em Matemática" %in% input$nota){
                                                                                                                                                               a = read.table("smt.txt")
                                                                                                                                                               a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM")
-                                                                                                                                                              kable_styling(a.html, "striped")}}}}}}}}}}}}}
+                                                                                                                                                              kable_styling(a.html, "striped")}}}}}}}}}}}}}}
   tab = function(){
     rm(list=ls())
     if(2015 %in% input$anos){
