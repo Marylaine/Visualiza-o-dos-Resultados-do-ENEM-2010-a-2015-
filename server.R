@@ -6,7 +6,7 @@ library(gridExtra)
 function(input,output,session){
 
   output$plot = renderPlot({
-
+    
     ## gráficos de 2015
     # boxplots das notas 2015
     if("Média Geral" %in% input$nota){
@@ -8686,8 +8686,8 @@ function(input,output,session){
                                      lower = lower.hinge, upper = upper.hinge,
                                      fill = sexo)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Sexo",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
+              labs(x="Sexo",y="Média da Redação no ENEM",
+                   title="Boxplot das Médias da Redação no ENEM Segundo o Ano, Sexo e Região")+
               theme_bw() + theme(legend.position="none") + 
               facet_wrap(e~reg, ncol = 5, strip.position = "right")
             print(brsr)
@@ -8703,8 +8703,8 @@ function(input,output,session){
                                      lower = lower.hinge, upper = upper.hinge,
                                      fill = sexo, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Sexo",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
+              labs(x="Sexo",y="Nota em Ciências da Natureza no ENEM",
+                   title="Boxplot das Notas em Ciências da Natureza no ENEM Segundo o Ano, Sexo e Região")+
               theme_bw() + theme(legend.position="none") + 
               facet_wrap(e~reg, ncol = 5, strip.position = "right")
             print(bnsr)
@@ -8720,8 +8720,8 @@ function(input,output,session){
                                      lower = lower.hinge, upper = upper.hinge,
                                      fill = sexo, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Sexo",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
+              labs(x="Sexo",y="Nota em Ciências Humanas no ENEM",
+                   title="Boxplot das Notas em Ciências Humanas no ENEM Segundo o Ano, Sexo e Região")+
               theme_bw() + theme(legend.position="none") + 
               facet_wrap(e~reg, ncol = 5, strip.position = "right")
             print(bhsr)
@@ -8737,8 +8737,8 @@ function(input,output,session){
                                      lower = lower.hinge, upper = upper.hinge,
                                      fill = sexo, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Sexo",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
+              labs(x="Sexo",y="Nota em Linguagens e Códigos no ENEM",
+                   title="Boxplot das Notas em Linguagens e Códigos no ENEM Segundo o Ano, Sexo e Região")+
               theme_bw() + theme(legend.position="none") + 
               facet_wrap(e~reg, ncol = 5, strip.position = "right")
             print(blsr)
@@ -8754,8 +8754,8 @@ function(input,output,session){
                                      lower = lower.hinge, upper = upper.hinge,
                                      fill = sexo, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Sexo",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano, Sexo e Região")+
+              labs(x="Sexo",y="Nota em Matemática no ENEM",
+                   title="Boxplot das Notas em Matemática no ENEM Segundo o Ano, Sexo e Região")+
               theme_bw() + theme(legend.position="none") + 
               facet_wrap(e~reg, ncol = 5, strip.position = "right")
             print(bmtsr)
@@ -8790,8 +8790,8 @@ function(input,output,session){
                                 lower = lower.hinge, upper = upper.hinge,
                                 fill = renda)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Renda",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
+              labs(x="Renda",y="Média da Redação no ENEM",
+                   title="Boxplot das Médias da Redação no ENEM Segundo o Ano e Renda",
                    caption="Nota: as legendas variam de ano para ano. Favor consultar nos gráficos com anos individuais")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
             print(brd)
@@ -8803,12 +8803,12 @@ function(input,output,session){
             rm(list = ls())
             ebnd = readRDS("ebnd.rds")
             bnd = ggplot(ebnd, aes(x = renda, y = out, middle = median,
-                                ymin = lower.whisker, ymax = upper.whisker,
-                                lower = lower.hinge, upper = upper.hinge,
-                                fill = renda, alpha=0.85)) +
+                                   ymin = lower.whisker, ymax = upper.whisker,
+                                   lower = lower.hinge, upper = upper.hinge,
+                                   fill = renda)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Renda",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
+              labs(x="Renda",y="Nota em Ciências da Natureza no ENEM",
+                   title="Boxplot das Notas em Ciências da Natureza no ENEM Segundo o Ano e Renda",
                    caption="Nota: as legendas variam de ano para ano. Favor consultar nos gráficos com anos individuais")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
             print(bnd)
@@ -8824,8 +8824,8 @@ function(input,output,session){
                                 lower = lower.hinge, upper = upper.hinge,
                                 fill = renda, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Renda",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
+              labs(x="Renda",y="Nota em Ciências Humanas no ENEM",
+                   title="Boxplot das Notas em Ciências Humanas no ENEM Segundo o Ano e Renda",
                    caption="Nota: as legendas variam de ano para ano. Favor consultar nos gráficos com anos individuais")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
             print(bhd)
@@ -8841,8 +8841,8 @@ function(input,output,session){
                                 lower = lower.hinge, upper = upper.hinge,
                                 fill = renda, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Renda",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
+              labs(x="Renda",y="Nota em Linguagens e Códigos no ENEM",
+                   title="Boxplot das Notas em Linguagens e Códigos no ENEM Segundo o Ano e Renda",
                    caption="Nota: as legendas variam de ano para ano. Favor consultar nos gráficos com anos individuais")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
             print(bld)
@@ -8858,8 +8858,8 @@ function(input,output,session){
                                  lower = lower.hinge, upper = upper.hinge,
                                  fill = renda, alpha=0.85)) +
               geom_boxplot(stat = "identity") + geom_point() + coord_flip() +
-              labs(x="Renda",y="Média no ENEM",
-                   title="Boxplot das Médias no ENEM Segundo o Ano e Renda",
+              labs(x="Renda",y="Nota em Matemática no ENEM",
+                   title="Boxplot das Notas em Matemática no ENEM Segundo o Ano e Renda",
                    caption="Nota: as legendas variam de ano para ano. Favor consultar nos gráficos com anos individuais")+
               theme_bw() + theme(legend.position="none") + facet_grid(~e)
             print(bmtd)
@@ -9402,183 +9402,183 @@ function(input,output,session){
     if(2015 %in% input$anos){
       if("Média Geral" %in% input$nota){
         a = read.table("sm15.txt")
-        a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2015")
+        a.html <- kable(a,row.names=F,"html", caption = "Tabela Resumo das Médias do ENEM 2015")
         kable_styling(a.html, "striped")}else{
           if("Média da Redação" %in% input$nota){
             a = read.table("sr15.txt")
-            a.html = kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2015")
+            a.html = kable(a,row.names=F,"html", caption = "Tabela Resumo das Médias da Redação do ENEM 2015")
             kable_styling(a.html, "striped")}else{
               if("Nota em Ciências da Natureza" %in% input$nota){
                 a = read.table("sn15.txt")
-                a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2015")
+                a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2015")
                 kable_styling(a.html, "striped")}else{
                   if("Nota em Ciências Humanas" %in% input$nota){
                     a = read.table("sh15.txt")
-                    a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2015")
+                    a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2015")
                     kable_styling(a.html, "striped")}else{
                       if("Nota em Linguagens e Códigos" %in% input$nota){
                         a = read.table("sl15.txt")
-                        a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2015")
+                        a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2015")
                         kable_styling(a.html, "striped")}else{
                           if("Nota em Matemática" %in% input$nota){
                             a = read.table("smt15.txt")
-                            a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2015")
+                            a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2015")
                             kable_styling(a.html, "striped")}}}}}}}else{
                               #2014
                               if(2014 %in% input$anos){
                                 if("Média Geral" %in% input$nota){
                                   a = read.table("sm14.txt")
-                                  a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2014")
+                                  a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM 2014")
                                   kable_styling(a.html, "striped")}else{
                                     if("Média da Redação" %in% input$nota){
                                       a = read.table("sr14.txt")
-                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2014")
+                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2014")
                                       kable_styling(a.html, "striped")}else{
                                         if("Nota em Ciências da Natureza" %in% input$nota){
                                           a = read.table("sn14.txt")
-                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2014")
+                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2014")
                                           kable_styling(a.html, "striped")}else{
                                             if("Nota em Ciências Humanas" %in% input$nota){
                                               a = read.table("sh14.txt")
-                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2014")
+                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2014")
                                               kable_styling(a.html, "striped")}else{
                                                 if("Nota em Linguagens e Códigos" %in% input$nota){
                                                   a = read.table("sl14.txt")
-                                                  a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2014")
+                                                  a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2014")
                                                   kable_styling(a.html, "striped")}else{
                                                     if("Nota em Matemática" %in% input$nota){
                                                       a = read.table("smt14.txt")
-                                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2014")
+                                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2014")
                                                       kable_styling(a.html, "striped")}}}}}}}else{
                                                         #2013
                                                         if(2013 %in% input$anos){
                                                           if("Média Geral" %in% input$nota){
                                                             a = read.table("sm13.txt")
-                                                            a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2013")
+                                                            a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM 2013")
                                                             kable_styling(a.html, "striped")}else{
                                                               if("Média da Redação" %in% input$nota){
                                                                 a = read.table("sr13.txt")
-                                                                a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2013")
+                                                                a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2013")
                                                                 kable_styling(a.html, "striped")}else{
                                                                   if("Nota em Ciências da Natureza" %in% input$nota){
                                                                     a = read.table("sn13.txt")
-                                                                    a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2013")
+                                                                    a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2013")
                                                                     kable_styling(a.html, "striped")}else{
                                                                       if("Nota em Ciências Humanas" %in% input$nota){
                                                                         a = read.table("sh13.txt")
-                                                                        a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2013")
+                                                                        a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2013")
                                                                         kable_styling(a.html, "striped")}else{
                                                                           if("Nota em Linguagens e Códigos" %in% input$nota){
                                                                             a = read.table("sl13.txt")
-                                                                            a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2013")
+                                                                            a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2013")
                                                                             kable_styling(a.html, "striped")}else{
                                                                               if("Nota em Matemática" %in% input$nota){
                                                                                 a = read.table("smt13.txt")
-                                                                                a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2013")
+                                                                                a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2013")
                                                                                 kable_styling(a.html, "striped")}}}}}}}else{
                                                                                   #2012
                                                                                   if(2012 %in% input$anos){ 
                                                                                     if("Média Geral" %in% input$nota){
                                                                                       a = read.table("sm12.txt")
-                                                                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2012")
+                                                                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM 2012")
                                                                                       kable_styling(a.html, "striped")}else{
                                                                                         if("Média da Redação" %in% input$nota){
                                                                                           a = read.table("sr12.txt")
-                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2012")
+                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2012")
                                                                                           kable_styling(a.html, "striped")}else{
                                                                                             if("Nota em Ciências da Natureza" %in% input$nota){
                                                                                               a = read.table("sn12.txt")
-                                                                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2012")
+                                                                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2012")
                                                                                               kable_styling(a.html, "striped")}else{
                                                                                                 if("Nota em Ciências Humanas" %in% input$nota){
                                                                                                   a = read.table("sh12.txt")
-                                                                                                  a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2012")
+                                                                                                  a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2012")
                                                                                                   kable_styling(a.html, "striped")}else{
                                                                                                     if("Nota em Linguagens e Códigos" %in% input$nota){
                                                                                                       a = read.table("sl12.txt")
-                                                                                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2012")
+                                                                                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2012")
                                                                                                       kable_styling(a.html, "striped")}else{
                                                                                                         if("Nota em Matemática" %in% input$nota){
                                                                                                           a = read.table("smt12.txt")
-                                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2012")
+                                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2012")
                                                                                                           kable_styling(a.html, "striped")}}}}}}}else{
                                                                                                             #2011
                                                                                                             if(2011 %in% input$anos){
                                                                                                               if("Média Geral" %in% input$nota){
                                                                                                                 a = read.table("sm11.txt")
-                                                                                                                a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2011")
+                                                                                                                a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM 2011")
                                                                                                                 kable_styling(a.html, "striped")}else{
                                                                                                                   if("Média da Redação" %in% input$nota){
                                                                                                                     a = read.table("sr11.txt")
-                                                                                                                    a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2011")
+                                                                                                                    a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2011")
                                                                                                                     kable_styling(a.html, "striped")}else{
                                                                                                                       if("Nota em Ciências da Natureza" %in% input$nota){
                                                                                                                         a = read.table("sn11.txt")
-                                                                                                                        a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2011")
+                                                                                                                        a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2011")
                                                                                                                         kable_styling(a.html, "striped")}else{
                                                                                                                           if("Nota em Ciências Humanas" %in% input$nota){
                                                                                                                             a = read.table("sh11.txt")
-                                                                                                                            a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2011")
+                                                                                                                            a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2011")
                                                                                                                             kable_styling(a.html, "striped")}else{
                                                                                                                               if("Nota em Linguagens e Códigos" %in% input$nota){
                                                                                                                                 a = read.table("sl11.txt")
-                                                                                                                                a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2011")
+                                                                                                                                a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2011")
                                                                                                                                 kable_styling(a.html, "striped")}else{
                                                                                                                                   if("Nota em Matemática" %in% input$nota){
                                                                                                                                     a = read.table("smt11.txt")
-                                                                                                                                    a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2011")
+                                                                                                                                    a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2011")
                                                                                                                                     kable_styling(a.html, "striped")}}}}}}}else{
                                                                                                                                       #2010
                                                                                                                                       if(2010 %in% input$anos){
                                                                                                                                         if("Média Geral" %in% input$nota){
                                                                                                                                           a = read.table("sm10.txt")
-                                                                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM 2010")
+                                                                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM 2010")
                                                                                                                                           kable_styling(a.html, "striped")}else{
                                                                                                                                             if("Média da Redação" %in% input$nota){
                                                                                                                                               a = read.table("sr10.txt")
-                                                                                                                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2010")
+                                                                                                                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM 2010")
                                                                                                                                               kable_styling(a.html, "striped")}else{
                                                                                                                                                 if("Nota em Ciências da Natureza" %in% input$nota){
                                                                                                                                                   a = read.table("sn10.txt")
-                                                                                                                                                  a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2010")
+                                                                                                                                                  a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM 2010")
                                                                                                                                                   kable_styling(a.html, "striped")}else{
                                                                                                                                                     if("Nota em Ciências Humanas" %in% input$nota){
                                                                                                                                                       a = read.table("sh10.txt")
-                                                                                                                                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2010")
+                                                                                                                                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM 2010")
                                                                                                                                                       kable_styling(a.html, "striped")}else{
                                                                                                                                                         if("Nota em Linguagens e Códigos" %in% input$nota){
                                                                                                                                                           a = read.table("sl10.txt")
-                                                                                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2010")
+                                                                                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM 2010")
                                                                                                                                                           kable_styling(a.html, "striped")}else{
                                                                                                                                                             if("Nota em Matemática" %in% input$nota){
                                                                                                                                                               a = read.table("smt10.txt")
-                                                                                                                                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2010")
+                                                                                                                                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM 2010")
                                                                                                                                                               kable_styling(a.html, "striped")}}}}}}}else{
                                                                                                                                       #todos os anos
                                                                                                                                       if("Todos os anos" %in% input$anos){
                                                                                                                                         if("Média Geral" %in% input$nota){
                                                                                                                                           a = read.table("sm.txt")
-                                                                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Médias do ENEM")
+                                                                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias do ENEM")
                                                                                                                                           kable_styling(a.html, "striped")}else{
                                                                                                                                             if("Média da Redação" %in% input$nota){
                                                                                                                                               a = read.table("sr.txt")
-                                                                                                                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Médias da Redação do ENEM")
+                                                                                                                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Médias da Redação do ENEM")
                                                                                                                                               kable_styling(a.html, "striped")}else{
                                                                                                                                                 if("Nota em Ciências da Natureza" %in% input$nota){
                                                                                                                                                   a = read.table("sn.txt")
-                                                                                                                                                  a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM")
+                                                                                                                                                  a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências da Natureza do ENEM")
                                                                                                                                                   kable_styling(a.html, "striped")}else{
                                                                                                                                                     if("Nota em Ciências Humanas" %in% input$nota){
                                                                                                                                                       a = read.table("sh.txt")
-                                                                                                                                                      a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM")
+                                                                                                                                                      a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Ciências Humanas do ENEM")
                                                                                                                                                       kable_styling(a.html, "striped")}else{
                                                                                                                                                         if("Nota em Linguagens e Códigos" %in% input$nota){
                                                                                                                                                           a = read.table("sl.txt")
-                                                                                                                                                          a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM")
+                                                                                                                                                          a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Linguagens e Códigos do ENEM")
                                                                                                                                                           kable_styling(a.html, "striped")}else{
                                                                                                                                                             if("Nota em Matemática" %in% input$nota){
                                                                                                                                                               a = read.table("smt.txt")
-                                                                                                                                                              a.html <- kable(a, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM")
+                                                                                                                                                              a.html <- kable(a,row.names=F, "html", caption = "Tabela Resumo das Notas em Matemática do ENEM")
                                                                                                                                                               kable_styling(a.html, "striped")}}}}}}}}}}}}}}
   tab = function(){
     rm(list=ls())
@@ -9595,96 +9595,96 @@ function(input,output,session){
                         a = read.table("sl15.txt")}else{
                           if("Nota em Matemática" %in% input$nota){
                             a = read.table("smt15.txt")}}}}}}}else{
-                              #2014
-                              if(2014 %in% input$anos){
-                                if("Média Geral" %in% input$nota){
-                                  a = read.table("sm14.txt")}else{
-                                    if("Média da Redação" %in% input$nota){
-                                      a = read.table("mr14.txt")}else{
-                                        if("Nota em Ciências da Natureza" %in% input$nota){
-                                          a = read.table("sn14.txt")}else{
-                                            if("Nota em Ciências Humanas" %in% input$nota){
-                                              a = read.table("sh14.txt")}else{
-                                                if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                  a = read.table("sl14.txt")}else{
-                                                    if("Nota em Matemática" %in% input$nota){
-                                                      a = read.table("smt14.txt")}}}}}}}else{
-                                                        #2013
-                                                        if(2013 %in% input$anos){
-                                                          if("Média Geral" %in% input$nota){
-                                                            a = read.table("sm13.txt")}else{
-                                                              if("Média da Redação" %in% input$nota){
-                                                                a = read.table("sr13.txt")}else{
-                                                                  if("Nota em Ciências da Natureza" %in% input$nota){
-                                                                    a = read.table("sn13.txt")}else{
-                                                                      if("Nota em Ciências Humanas" %in% input$nota){
-                                                                        a = read.table("sh13.txt")}else{
-                                                                          if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                                            a = read.table("sl13.txt")}else{
-                                                                              if("Nota em Matemática" %in% input$nota){
-                                                                                a = read.table("smt13.txt")}}}}}}}else{
-                                                                                  #2012
-                                                                                  if(2012 %in% input$anos){ 
-                                                                                    if("Média Geral" %in% input$nota){
-                                                                                      a = read.table("sm12.txt")}else{
-                                                                                        if("Média da Redação" %in% input$nota){
-                                                                                          a = read.table("sr12.txt")}else{
-                                                                                            if("Nota em Ciências da Natureza" %in% input$nota){
-                                                                                              a = read.table("sn12.txt")}else{
-                                                                                                if("Nota em Ciências Humanas" %in% input$nota){
-                                                                                                  a = read.table("sh12.txt")}else{
-                                                                                                    if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                                                                      a = read.table("sl12.txt")}else{
-                                                                                                        if("Nota em Matemática" %in% input$nota){
-                                                                                                          a = read.table("smt12.txt")}}}}}}}else{
-                                                                                                            #2011
-                                                                                                            if(2011 %in% input$anos){
-                                                                                                              if("Média Geral" %in% input$nota){
-                                                                                                                a = read.table("sm11.txt")}else{
-                                                                                                                  if("Média da Redação" %in% input$nota){
-                                                                                                                    a = read.table("sr11.txt")}else{
-                                                                                                                      if("Nota em Ciências da Natureza" %in% input$nota){
-                                                                                                                        a = read.table("sn11.txt")}else{
-                                                                                                                          if("Nota em Ciências Humanas" %in% input$nota){
-                                                                                                                            a = read.table("sh11.txt")}else{
-                                                                                                                              if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                                                                                                a = read.table("sl11.txt")}else{
-                                                                                                                                  if("Nota em Matemática" %in% input$nota){
-                                                                                                                                    a = read.table("smt11.txt")}}}}}}}else{
-                                                                                                                                      #2010
-                                                                                                                                      if(2010 %in% input$anos){
-                                                                                                                                        if("Média Geral" %in% input$nota){
-                                                                                                                                          a = read.table("sm10.txt")}else{
-                                                                                                                                            if("Média da Redação" %in% input$nota){
-                                                                                                                                              a = read.table("sr10.txt")}else{
-                                                                                                                                                if("Nota em Ciências da Natureza" %in% input$nota){
-                                                                                                                                                  a = read.table("sn10.txt")}else{
-                                                                                                                                                    if("Nota em Ciências Humanas" %in% input$nota){
-                                                                                                                                                      a = read.table("sh10.txt")}else{
-                                                                                                                                                        if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                                                                                                                          a = read.table("sl10.txt")}else{
-                                                                                                                                                            if("Nota em Matemática" %in% input$nota){
-                                                                                                                                                              a = read.table("smt10.txt")}}}}}}}
-                                                                                                                                      #todos os anos
-                                                                                                                                      if("Todos os anos" %in% input$anos){
-                                                                                                                                        if("Média Geral" %in% input$nota){
-                                                                                                                                          a = read.table("sm.txt")}else{
-                                                                                                                                            if("Média da Redação" %in% input$nota){
-                                                                                                                                              a = read.table("sr.txt")}else{
-                                                                                                                                                if("Nota em Ciências da Natureza" %in% input$nota){
-                                                                                                                                                  a = read.table("sn.txt")}else{
-                                                                                                                                                    if("Nota em Ciências Humanas" %in% input$nota){
-                                                                                                                                                      a = read.table("sh.txt")}else{
-                                                                                                                                                        if("Nota em Linguagens e Códigos" %in% input$nota){
-                                                                                                                                                          a = read.table("sl.txt")}else{
-                                                                                                                                                            if("Nota em Matemática" %in% input$nota){
-                                                                                                                                                              a = read.table("smt.txt")}}}}}}}}}}}}
-    return(frame)} 
+    #2014
+    if(2014 %in% input$anos){
+      if("Média Geral" %in% input$nota){
+        a = read.table("sm14.txt")}else{
+          if("Média da Redação" %in% input$nota){
+            a = read.table("mr14.txt")}else{
+              if("Nota em Ciências da Natureza" %in% input$nota){
+                a = read.table("sn14.txt")}else{
+                  if("Nota em Ciências Humanas" %in% input$nota){
+                    a = read.table("sh14.txt")}else{
+                      if("Nota em Linguagens e Códigos" %in% input$nota){
+                        a = read.table("sl14.txt")}else{
+                          if("Nota em Matemática" %in% input$nota){
+                            a = read.table("smt14.txt")}}}}}}}else{
+     #2013
+     if(2013 %in% input$anos){
+       if("Média Geral" %in% input$nota){
+         a = read.table("sm13.txt")}else{
+           if("Média da Redação" %in% input$nota){
+             a = read.table("sr13.txt")}else{
+               if("Nota em Ciências da Natureza" %in% input$nota){
+                 a = read.table("sn13.txt")}else{
+                   if("Nota em Ciências Humanas" %in% input$nota){
+                     a = read.table("sh13.txt")}else{
+                       if("Nota em Linguagens e Códigos" %in% input$nota){
+                         a = read.table("sl13.txt")}else{
+                           if("Nota em Matemática" %in% input$nota){
+                             a = read.table("smt13.txt")}}}}}}}else{
+      #2012
+      if(2012 %in% input$anos){ 
+        if("Média Geral" %in% input$nota){
+          a = read.table("sm12.txt")}else{
+            if("Média da Redação" %in% input$nota){
+              a = read.table("sr12.txt")}else{
+                if("Nota em Ciências da Natureza" %in% input$nota){
+                  a = read.table("sn12.txt")}else{
+                    if("Nota em Ciências Humanas" %in% input$nota){
+                      a = read.table("sh12.txt")}else{
+                        if("Nota em Linguagens e Códigos" %in% input$nota){
+                          a = read.table("sl12.txt")}else{
+                            if("Nota em Matemática" %in% input$nota){
+                              a = read.table("smt12.txt")}}}}}}}else{
+       #2011
+       if(2011 %in% input$anos){
+         if("Média Geral" %in% input$nota){
+           a = read.table("sm11.txt")}else{
+             if("Média da Redação" %in% input$nota){
+               a = read.table("sr11.txt")}else{
+                 if("Nota em Ciências da Natureza" %in% input$nota){
+                   a = read.table("sn11.txt")}else{
+                     if("Nota em Ciências Humanas" %in% input$nota){
+                       a = read.table("sh11.txt")}else{
+                         if("Nota em Linguagens e Códigos" %in% input$nota){
+                           a = read.table("sl11.txt")}else{
+                             if("Nota em Matemática" %in% input$nota){
+                               a = read.table("smt11.txt")}}}}}}}else{
+       #2010
+       if(2010 %in% input$anos){
+         if("Média Geral" %in% input$nota){
+           a = read.table("sm10.txt")}else{
+             if("Média da Redação" %in% input$nota){
+               a = read.table("sr10.txt")}else{
+                 if("Nota em Ciências da Natureza" %in% input$nota){
+                   a = read.table("sn10.txt")}else{
+                     if("Nota em Ciências Humanas" %in% input$nota){
+                       a = read.table("sh10.txt")}else{
+                         if("Nota em Linguagens e Códigos" %in% input$nota){
+                           a = read.table("sl10.txt")}else{
+                             if("Nota em Matemática" %in% input$nota){
+                               a = read.table("smt10.txt")}}}}}}}else{
+       #todos os anos
+       if("Todos os anos" %in% input$anos){
+         if("Média Geral" %in% input$nota){
+           a = read.table("sm.txt")}else{
+             if("Média da Redação" %in% input$nota){
+               a = read.table("sr.txt")}else{
+                 if("Nota em Ciências da Natureza" %in% input$nota){
+                   a = read.table("sn.txt")}else{
+                     if("Nota em Ciências Humanas" %in% input$nota){
+                       a = read.table("sh.txt")}else{
+                         if("Nota em Linguagens e Códigos" %in% input$nota){
+                           a = read.table("sl.txt")}else{
+                             if("Nota em Matemática" %in% input$nota){
+                               a = read.table("smt.txt")}}}}}}}}}}}}}
+    return(a)}
   output$downloadtable = downloadHandler(
     filename = function(){paste0("tabelaResumo", ".csv")},
     content = function(file){
       #frame = read.table("sm15.txt")
       tab()
-      write.csv2(frame, file, row.names = F, na = "")}
+      write.csv2(a, file, row.names = F, na = "")}
   )
   }

@@ -1,9 +1,10 @@
 library(shiny)
 library(shinythemes)
 library(markdown)
+library(shinycssloaders)
 
 navbarPage("VISUALIZAÇÃO GRÁFICA E RESUMIDA DOS RESULTADOS DAS EDIÇÕES DO ENEM NOS ANOS DE 2010 A 2015",
-           tabPanel("Gráficos",
+           tabPanel("Gráficos", icon = icon("bar-chart-o"),
                     fluidPage(theme = shinytheme("flatly"),
                       # titulo
                       titlePanel("Gráficos das Edições do ENEM (2010 a 2015)"),
@@ -45,26 +46,26 @@ navbarPage("VISUALIZAÇÃO GRÁFICA E RESUMIDA DOS RESULTADOS DAS EDIÇÕES DO E
                         ),
                         # organização da tela de visualização
                         mainPanel(width = 7,
-                          plotOutput("plot"),
+                          withSpinner(plotOutput("plot"), color = getOption("spinner.color", "#008080"),
+                                      type = getOption("spinner.type",4)),
                           hr(),
                           print("Desenvolvido por: Marylaine Nascimento e Marcus Nunes")
                         )
                       ))
              ),
-           tabPanel("Tabelas Resumo",
+           tabPanel("Tabelas Resumo", icon = icon("table"),
                     titlePanel("Tabela Resumo com Alguns Parâmetros"),
                     print(h4("Faça download das tabelas e fique a vontade para analisar")),
                     downloadButton("downloadtable", label = "Download"),
                         tableOutput("tabela")
            ),
-           navbarMenu("Como Interpretar",
+           navbarMenu("Como Interpretar", icon = icon("question-sign", lib = "glyphicon"),
                       tabPanel("Histograma",
                                includeMarkdown("histograma.md")
                       ),
                       tabPanel("Boxplot",
                                includeMarkdown("boxplot.md")
-                      )
-           ),
-           tabPanel("Sobre",
+                      )),
+           tabPanel("Sobre", icon = icon("comment", lib = "glyphicon"),
                     includeMarkdown("sobre.md"))
 )

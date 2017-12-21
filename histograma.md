@@ -1,6 +1,6 @@
 # Histograma
  
- O histograma se assemelha a um gráfico de colunas, mas sua estrutura infoma mais do que a frequência dos dados. A estrutura de um histograma é exibida na figura abaixo, em que temos os mesmos dados das notas em ciências da natureza no ENEM 2015 por sexo utilizados para produzir os boxplots da aba "como interpretar um boxplot". Observe que há dois grupos de colunas, um rosa e um azul, representando o sexo feminino e o sexo masculino, respectivamente. Cada grupo de colunas é um histograma. Eles estão sobrepostos e a cor mais escura é a interseção entre eles. 
+ O histograma se assemelha a um gráfico de colunas, mas sua estrutura informa mais do que a frequência dos dados. A estrutura de um histograma é exibida na figura abaixo, em que temos os mesmos dados das notas em ciências da natureza no ENEM 2015 por sexo utilizados para produzir os boxplots da aba "como interpretar um boxplot". Observe que há dois grupos de colunas, um rosa e um azul, representando o sexo feminino e o sexo masculino, respectivamente. Cada grupo de colunas é um histograma. Eles estão sobrepostos e a cor mais escura é a interseção entre eles. 
  
 <img src="estrutura_histograma.png" width="800">
 
